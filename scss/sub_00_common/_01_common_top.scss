@@ -1,0 +1,37 @@
+#sub_common {
+	width: 1920px;
+
+	.sub_common_top {
+		width: 100%;
+		height: 300px;
+		background-color: #e8dfd8;
+		padding: 100px 0px 100px 210px;
+
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		.sub_common_top_inner {
+			width: 100%;
+
+			p {
+				font: 15px/1.2 'LotteMartDream';
+				color: #555;
+			}
+			h2 {
+				font: 25px/1 'LotteMartHappy';
+				color: #555;
+			}
+			h3 {
+				font: 16px/1.5 'LotteMartDream';
+				color: #555;
+			}
+		}
+		figure {
+			img {
+				width: 300px;
+				margin: 0px 210px 0px 0px;
+			}
+		}
+	}
+}

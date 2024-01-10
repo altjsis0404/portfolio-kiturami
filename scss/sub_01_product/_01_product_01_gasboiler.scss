@@ -1,0 +1,72 @@
+.sub_gasboiler_bottom {
+	width: 1500px;
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+	padding-top: 3%;
+	h6 {
+		display: none;
+	}
+	.sub_gasboiler_bottom_inner_01,
+	.sub_gasboiler_bottom_inner_02,
+	.sub_gasboiler_bottom_inner_03 {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3%;
+		article {
+			width: 600px;
+			border-bottom: 2px solid #e8dfd8;
+			ul {
+				li {
+					.sub_gasboiler_bottom_img {
+						img {
+							width: 250px;
+						}
+					}
+					.open {
+						width: 350px;
+						height: 350px;
+						background-color: #fff;
+						margin: 0 auto;
+						margin-top: -360px;
+						transition: 0.5s;
+						overflow: hidden;
+						opacity: 0;
+						cursor: pointer;
+
+						&:hover {
+							transition: 0.5s;
+							border: 1px solid #999;
+							border-radius: 50%;
+							box-shadow: 1px 1px 15px #e8dfd8;
+							overflow: hidden;
+							opacity: 0.6;
+						}
+						> span {
+							font: 20px/1 'LotteMartDream';
+							color: #999;
+							text-align: center;
+							text-shadow: 1px 1px 5px #e8dfd8;
+							top: 50%;
+							position: relative;
+						}
+					}
+					span {
+						font: 15px/1 'LotteMartHappy';
+						color: #777;
+					}
+					h3 {
+						font: 18px/1.5 'LotteMartHappy';
+						color: #555;
+					}
+					h4 {
+						font: 12px/1.2 'LotteMartDream';
+						color: #999;
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+}
