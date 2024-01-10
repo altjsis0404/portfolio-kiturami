@@ -1,58 +1,77 @@
 .commpany_introduce {
-	width: 1500px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: left;
-	margin: 5% 0% 5% 10%;
-	gap: 4vw;
-	h6 {
-		display: none;
-	}
+	width: 100%;
+	height: 50vh;
+
 	div {
-		width: 100%;
-		p {
-			width: 100%;
-			font: 16px/1.5 'LotteMartDream';
-			color: #777;
+		width: 75vw;
+		height: 50vh;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		align-items: center;
+		gap: 4vw;
+
+		div {
+			h6 {
+				display: none;
+				text-align: left;
+			}
+
+			p {
+				width: 100%;
+				font: 16px/1.5 'LotteMartDream';
+				color: #777;
+				text-align: left;
+			}
 		}
-	}
-	.introduce_mp4 {
-		width: 100%;
-		video {
+
+		div {
 			width: 100%;
-			object-fit: cover;
+
+			.introduce_mp4 {
+				width: 100%;
+				height: 35vh;
+			}
 		}
+
+
 	}
+
 }
 
 .commpany_location {
 	width: 1500px;
 	margin: 0 auto;
 	text-align: center;
+
 	.location_inner {
 
-		h2{
+		h2 {
 			font: 20px/2.5 'LotteMartHappy';
 			color: #fff;
 			background-color: #222;
 		}
+
 		#map {
 			width: 100%;
 			height: 500px;
 			border: 2px solid #e8dfd8;
 			margin-bottom: 20px;
 		}
+
 		&::after {
 			content: '';
 			display: block;
 			clear: both;
 		}
+
 		.traffic {
 			float: left;
 			display: flex;
+
 			li {
 				margin-right: 20px;
+
 				a {
 					width: 250px;
 					height: 40px;
@@ -62,6 +81,7 @@
 					text-align: center;
 					display: block;
 				}
+
 				&.on a {
 					color: #fff;
 					background-color: orange;
@@ -69,11 +89,14 @@
 				}
 			}
 		}
+
 		.branch {
 			float: right;
 			display: flex;
+
 			li {
 				margin-left: 10px;
+
 				a {
 					width: 250px;
 					height: 40px;
@@ -83,6 +106,7 @@
 					text-align: center;
 					display: block;
 				}
+
 				&.on a {
 					color: #fff;
 					background-color: orange;
