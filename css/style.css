@@ -380,6 +380,107 @@ body {
   color: orange;
 }
 
+@media screen and (max-width: 1179px) {
+  #baro .baro_inner {
+    margin-top: 5%;
+  }
+  #baro .baro_inner .txt {
+    margin-bottom: 2%;
+  }
+  #baro .baro_inner .txt h2 {
+    font: 25px/1.5 "LotteMartHappy";
+  }
+  #baro .baro_inner .txt p {
+    font: 10px/1.5 "LotteMartDream";
+  }
+  #baro .baro_inner .wrap {
+    width: 25%;
+    margin: 0 auto;
+  }
+  #baro .baro_inner .wrap .leftbaro a {
+    width: 150px;
+    height: 150px;
+  }
+  #baro .baro_inner .wrap .leftbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .leftbaro a h3 {
+    font: 12px/2 "LotteMartDream";
+    margin-bottom: 3vh;
+  }
+  #baro .baro_inner .wrap .centerbaro a {
+    width: 150px;
+    height: 150px;
+  }
+  #baro .baro_inner .wrap .centerbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .centerbaro a h3 {
+    font: 12px/2 "LotteMartDream";
+    margin-bottom: 3vh;
+  }
+  #baro .baro_inner .wrap .rightbaro a {
+    width: 150px;
+    height: 150px;
+  }
+  #baro .baro_inner .wrap .rightbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .rightbaro a h3 {
+    font: 12px/2 "LotteMartDream";
+    margin-bottom: 3vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  #baro .baro_inner .txt {
+    margin-bottom: 10%;
+  }
+  #baro .baro_inner .txt h2 {
+    font: 15px/1.7;
+  }
+  #baro .baro_inner .txt p {
+    font: 10px/1.5;
+  }
+  #baro .baro_inner .wrap {
+    width: 85%;
+  }
+  #baro .baro_inner .wrap .leftbaro a {
+    width: 80px;
+    height: 80px;
+  }
+  #baro .baro_inner .wrap .leftbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .leftbaro a h3 {
+    font: 8px/2;
+  }
+  #baro .baro_inner .wrap .centerbaro a {
+    width: 80px;
+    height: 80px;
+  }
+  #baro .baro_inner .wrap .centerbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .centerbaro a h3 {
+    font: 8px/2;
+  }
+  #baro .baro_inner .wrap .rightbaro a {
+    width: 80px;
+    height: 80px;
+  }
+  #baro .baro_inner .wrap .rightbaro a img {
+    width: 30px;
+    height: 30px;
+  }
+  #baro .baro_inner .wrap .rightbaro a h3 {
+    font: 8px/2;
+  }
+}
 #banner1 {
   width: 100%;
   background-color: #fff;
