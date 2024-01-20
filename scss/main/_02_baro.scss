@@ -23,7 +23,7 @@
 		}
 
 		.wrap {
-			width: 35%;
+			width: 30%;
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
@@ -42,7 +42,7 @@
 					}
 
 					h3 {
-						font: 15px/2 'LotteMartDream';
+						font: 0.8vw/2 'LotteMartDream';
 						color: #555;
 						margin-bottom: 3vh;
 
@@ -67,7 +67,7 @@
 					}
 
 					h3 {
-						font: 15px/2 'LotteMartDream';
+						font: 0.8vw/2 'LotteMartDream';
 						color: #555;
 						margin-bottom: 3vh;
 
@@ -92,7 +92,7 @@
 					}
 
 					h3 {
-						font: 15px/2 'LotteMartDream';
+						font: 0.8vw/2 'LotteMartDream';
 						color: #555;
 						margin-bottom: 3vh;
 
@@ -124,7 +124,7 @@
 			}
 
 			.wrap {
-				width: 25%;
+				width: 50%;
 				margin: 0 auto;
 
 				.leftbaro {
@@ -138,10 +138,12 @@
 						}
 
 						h3 {
-							font: 12px/2 'LotteMartDream';
+							font: 1.5vw/2 'LotteMartDream';
 							margin-bottom: 3vh;
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
@@ -157,10 +159,12 @@
 						}
 
 						h3 {
-							font: 12px/2 'LotteMartDream';
+							font: 1.5vw/2 'LotteMartDream';
 							margin-bottom: 3vh;
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
@@ -176,10 +180,12 @@
 						}
 
 						h3 {
-							font: 12px/2 'LotteMartDream';
+							font: 1.5vw/2 'LotteMartDream';
 							margin-bottom: 3vh;
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
@@ -199,11 +205,11 @@
 				margin-bottom: 10%;
 
 				h2 {
-					font: 3.5vw/1.7;
+					font: 5vw/1.7 'LotteMartHappy';
 				}
 
 				p {
-					font: 2vw/1.5;
+					font: 3vw/1.5 'LotteMartHappy';
 				}
 			}
 
@@ -221,9 +227,11 @@
 						}
 
 						h3 {
-							font: 8px/2;
+							font: 3.5vw/2 'LotteMartHappy';
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
@@ -239,9 +247,11 @@
 						}
 
 						h3 {
-							font: 8px/2;
+							font: 3.5vw/2 'LotteMartHappy';
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
@@ -257,9 +267,11 @@
 						}
 
 						h3 {
-							font: 8px/2;
+							font: 3.5vw/2 'LotteMartHappy';
 
-							&:hover {}
+							&:hover {
+								color: orange;
+							}
 						}
 					}
 				}
