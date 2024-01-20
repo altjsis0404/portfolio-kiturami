@@ -12,12 +12,12 @@
 			margin-bottom: 2%;
 
 			h2 {
-				font: 35px/1.5 'LotteMartHappy';
+				font: 1.8vw/1.5 'LotteMartHappy';
 				color: #555;
 			}
 
 			p {
-				font: 16px/1.5 'LotteMartDream';
+				font: 0.9vw/1.5 'LotteMartDream';
 				color: #555;
 			}
 		}
@@ -115,11 +115,11 @@
 				margin-bottom: 2%;
 
 				h2 {
-					font: 25px/1.5 'LotteMartHappy';
+					font: 2.5vw/1.5 'LotteMartHappy';
 				}
 
 				p {
-					font: 10px/1.5 'LotteMartDream';
+					font: 1.5vw/1.5 'LotteMartDream';
 				}
 			}
 
@@ -192,22 +192,23 @@
 @media screen and (max-width: 400px) {
 
 	#baro {
+		margin-top: 5vh;
 
 		.baro_inner {
 			.txt {
 				margin-bottom: 10%;
 
 				h2 {
-					font: 15px/1.7;
+					font: 3.5vw/1.7;
 				}
 
 				p {
-					font: 10px/1.5;
+					font: 2vw/1.5;
 				}
 			}
 
 			.wrap {
-				width: 85%;
+				width: 80%;
 
 				.leftbaro {
 					a {

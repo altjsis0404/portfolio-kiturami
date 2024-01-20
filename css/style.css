@@ -101,7 +101,108 @@
   color: #284934;
   text-shadow: 0.5px 0.5px 1px #999;
 }
+#header .header_btnCall {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: none;
+  position: absolute;
+}
+#header .header_btnCall::before {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+  position: absolute;
+}
+#header .header_btnCall::after {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+  position: absolute;
+}
+#header .header_btnCall span {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  top: 50%;
+  margin-top: -1px;
+  transition: 0.5s;
+  text-indent: -9999999px;
+  display: block;
+  position: absolute;
+}
+#header .header_btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header .header_btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header .header_btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header .header_gnb_mo {
+  width: 270px;
+  height: 100vh;
+  background-color: #333;
+  top: 0;
+  padding: 35px 30px;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.5s;
+  display: none;
+}
+#header .header_gnb_mo.on {
+  left: 0px;
+}
+#header .header_gnb_mo li a {
+  font: 24px/2 "LotteMartDream";
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+#header .header_gnb_mo li .header_sub_mo {
+  display: none;
+}
+#header .header_gnb_mo li .header_sub_mo div ul li a {
+  font: 14px/1 "LotteMartDream";
+  color: #888;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0px;
+  display: block;
+}
 
+@media screen and (max-width: 1179px) {
+  #header h1 a img {
+    margin-left: calc(50vw - 180px);
+  }
+  #header #header_gnb {
+    display: none;
+  }
+  #header .header_btnCall {
+    display: none;
+  }
+  #header .header_gnb_mo {
+    display: none;
+  }
+}
 #footer {
   width: 100%;
   background-color: #e8dfd8;
@@ -240,7 +341,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 5vh;
 }
 
 .swiper-slide img {
@@ -248,48 +349,6 @@ body {
   height: 100%;
   display: block;
   object-fit: contain;
-}
-
-.swiper-button-prev {
-  color: black !important;
-  background-color: #fff;
-  opacity: 0.5;
-  padding: 15px 5px;
-  margin-left: 20px;
-  border-radius: 20px;
-}
-
-.swiper-button-next {
-  color: black !important;
-  background-color: #fff;
-  opacity: 0.5;
-  padding: 15px 5px;
-  margin-right: 20px;
-  border-radius: 20px;
-}
-
-.swiper-button-prev:after {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-}
-
-.swiper-button-next:after {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-}
-
-.swiper-button-prev:hover {
-  background: orange !important;
-  opacity: 0.4;
-}
-
-.swiper-button-next:hover {
-  background: orange !important;
-  opacity: 0.4;
-}
-
-.swiper-pagination-bullet {
-  background: #284934 !important;
 }
 
 #baro {
@@ -306,11 +365,11 @@ body {
   margin-bottom: 2%;
 }
 #baro .baro_inner .txt h2 {
-  font: 35px/1.5 "LotteMartHappy";
+  font: 1.8vw/1.5 "LotteMartHappy";
   color: #555;
 }
 #baro .baro_inner .txt p {
-  font: 16px/1.5 "LotteMartDream";
+  font: 0.9vw/1.5 "LotteMartDream";
   color: #555;
 }
 #baro .baro_inner .wrap {
@@ -388,10 +447,10 @@ body {
     margin-bottom: 2%;
   }
   #baro .baro_inner .txt h2 {
-    font: 25px/1.5 "LotteMartHappy";
+    font: 2.5vw/1.5 "LotteMartHappy";
   }
   #baro .baro_inner .txt p {
-    font: 10px/1.5 "LotteMartDream";
+    font: 1.5vw/1.5 "LotteMartDream";
   }
   #baro .baro_inner .wrap {
     width: 25%;
@@ -435,17 +494,20 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  #baro {
+    margin-top: 5vh;
+  }
   #baro .baro_inner .txt {
     margin-bottom: 10%;
   }
   #baro .baro_inner .txt h2 {
-    font: 15px/1.7;
+    font: 3.5vw/1.7;
   }
   #baro .baro_inner .txt p {
-    font: 10px/1.5;
+    font: 2vw/1.5;
   }
   #baro .baro_inner .wrap {
-    width: 85%;
+    width: 80%;
   }
   #baro .baro_inner .wrap .leftbaro a {
     width: 80px;
@@ -499,7 +561,7 @@ body {
   object-fit: cover;
 }
 #banner1 a .banner1_inner {
-  width: 40%;
+  width: 70%;
   align-items: center;
   text-align: left;
   top: 34%;
@@ -507,21 +569,76 @@ body {
   position: absolute;
 }
 #banner1 a .banner1_inner h2 {
-  font: 35px/1 "LotteMartHappy";
-  color: #555;
-  position: absolute;
-}
-#banner1 a .banner1_inner p {
-  font: 17px/7 "LotteMartDream";
+  font: 1.8vw/1 "LotteMartHappy";
   color: #555;
   position: absolute;
 }
 #banner1 a .banner1_inner h3 {
-  font: bold 18px/12 "LotteMartDream";
+  font: 0.9vw/7 "LotteMartDream";
+  color: #555;
+  position: absolute;
+}
+#banner1 a .banner1_inner h4 {
+  font: 0.9vw/10 "LotteMartDream";
+  color: #555;
+  position: absolute;
+}
+#banner1 a .banner1_inner h5 {
+  font: bold 0.9vw/15 "LotteMartDream";
   color: #555;
   position: absolute;
 }
 
+@media screen and (max-width: 1179px) {
+  #banner1 a {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+  #banner1 a .banner1_inner {
+    width: 80%;
+    top: 32%;
+    left: 15.5%;
+  }
+  #banner1 a .banner1_inner h2 {
+    font: 2.5vw/1 "LotteMartHappy";
+  }
+  #banner1 a .banner1_inner h3 {
+    font: 1.5vw/7 "LotteMartDream";
+  }
+  #banner1 a .banner1_inner h4 {
+    font: 1.5vw/10 "LotteMartDream";
+  }
+  #banner1 a .banner1_inner h5 {
+    font: bold 1.5vw/15 "LotteMartDream";
+  }
+}
+@media screen and (max-width: 400px) {
+  #banner1 a {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+  #banner1 a .banner1_inner {
+    width: 80%;
+    top: 25%;
+    left: 9%;
+  }
+  #banner1 a .banner1_inner h2 {
+    font: 3.5vw/1 "LotteMartHappy";
+  }
+  #banner1 a .banner1_inner h3 {
+    font: 2vw/7 "LotteMartDream";
+  }
+  #banner1 a .banner1_inner h4 {
+    font: 2vw/10 "LotteMartDream";
+  }
+  #banner1 a .banner1_inner h5 {
+    font: bold 2vw/15 "LotteMartDream";
+  }
+}
 #brand {
   width: 100%;
   height: 700px;
@@ -898,21 +1015,99 @@ body {
   position: absolute;
 }
 #banner2 a .banner2_inner h2 {
-  font: 35px/1 "LotteMartHappy";
+  font: 1.8vw/1 "LotteMartHappy";
   color: #555;
   position: absolute;
 }
 #banner2 a .banner2_inner p {
-  font: 17px/7 "LotteMartDream";
+  font: 0.9vw/7 "LotteMartDream";
   color: #555;
   position: absolute;
 }
 #banner2 a .banner2_inner h3 {
-  font: bold 18px/12 "LotteMartDream";
+  font: bold 0.9vw/12 "LotteMartDream";
   color: #555;
   position: absolute;
 }
 
+@media screen and (max-width: 1179px) {
+  #banner2 a {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+  #banner2 a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #banner2 a .banner2_inner {
+    width: 40%;
+    align-items: center;
+    text-align: left;
+    top: 32%;
+    left: 22%;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner h2 {
+    font: 2.5vw/1 "LotteMartHappy";
+    color: #555;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner p {
+    font: 1.5vw/7 "LotteMartDream";
+    color: #555;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner h3 {
+    font: bold 1.5vw/12 "LotteMartDream";
+    color: #555;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 400px) {
+  #banner2 {
+    width: 100%;
+    background-color: #fff;
+    margin: 2% 0% 5% 0%;
+    overflow: hidden;
+  }
+  #banner2 a {
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+  #banner2 a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #banner2 a .banner2_inner {
+    width: 40%;
+    align-items: center;
+    text-align: left;
+    top: 25%;
+    left: 22%;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner h2 {
+    font: 4vw/1 "LotteMartHappy";
+    color: #555;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner p {
+    font: 3vw/7 "LotteMartDream";
+    color: #555;
+    position: absolute;
+  }
+  #banner2 a .banner2_inner h3 {
+    font: bold 3vw/12 "LotteMartDream";
+    color: #555;
+    position: absolute;
+  }
+}
 #story {
   width: 100%;
   height: 400px;
