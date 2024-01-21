@@ -9,24 +9,29 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+
 		h6 {
 			display: none;
 		}
+
 		.data {
 			img {
 				width: 15px;
 			}
+
 			a {
 				font: 15px/1.2 'LotteMartDream';
 				color: #555;
 				margin-right: 20px;
 			}
 		}
+
 		.sns {
 			position: relative;
 			right: 90px;
 			display: flex;
 			justify-content: space-between;
+
 			span {
 				font: 15px/1.8 'LotteMartDream';
 				color: #555;
@@ -39,6 +44,7 @@
 				}
 			}
 		}
+
 		.familysite {
 			font: 15px/1.2 'LotteMartDream';
 			color: #555;
@@ -46,11 +52,13 @@
 			gap: 10px;
 		}
 	}
+
 	.footer_middle {
 		width: 1500px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+
 		h6 {
 			display: none;
 		}
@@ -58,19 +66,23 @@
 		.address {
 			position: relative;
 			bottom: -10px;
+
 			img {
 				width: 13px;
 			}
+
 			span {
 				font: 15px/1.8 'LotteMartDream';
 				color: #555;
 			}
+
 			p {
 				font: 15px/1.8 'LotteMartDream';
 				color: #555;
 				margin-left: 17px;
 			}
 		}
+
 		.call {
 			position: relative;
 			right: -9.5%;
@@ -86,6 +98,7 @@
 				color: orange;
 			}
 		}
+
 		.cs_center {
 			img {
 				width: 500px;
@@ -94,12 +107,15 @@
 			}
 		}
 	}
+
 	.footer_bottom {
 		width: 1500px;
 		margin: 0 auto;
+
 		h6 {
 			display: none;
 		}
+
 		.award {
 			display: flex;
 			justify-content: space-between;
@@ -108,10 +124,276 @@
 				width: 35px;
 				height: 35px;
 			}
+
 			span {
 				font: 9px/1.3 'LotteMartDream';
 				color: #555;
 				margin-left: -75px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	#footer {
+		width: 100%;
+		background-color: #e8dfd8;
+		margin: 5% 0% 0% 0%;
+		padding: 2%;
+
+		.footer_top {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+
+			h6 {
+				display: none;
+			}
+
+			.data {
+				img {
+					width: 1vw;
+				}
+
+				a {
+					font: 1vw/1 'LotteMartDream';
+					color: #555;
+					margin-right: 1vw;
+				}
+			}
+
+			.sns {
+				position: relative;
+				right: 3.5vw;
+				display: flex;
+				justify-content: space-between;
+
+				span {
+					font: 1vw/2 'LotteMartDream';
+					color: #555;
+				}
+
+				a {
+					img {
+						width: 2vw;
+						margin-left: 10px;
+					}
+				}
+			}
+
+			.familysite {
+				font: 1vw/1.6 'LotteMartDream';
+				color: #555;
+				display: flex;
+				gap: 10px;
+			}
+		}
+
+		.footer_middle {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+
+			h6 {
+				display: none;
+			}
+
+			.address {
+				position: relative;
+				bottom: -1vh;
+
+				img {
+					width: 1vw;
+				}
+
+				span {
+					font: 1vw/1.8 'LotteMartDream';
+					color: #555;
+				}
+
+				p {
+					font: 1vw/1.8 'LotteMartDream';
+					color: #555;
+					margin-left: 17px;
+				}
+			}
+
+			.call {
+				position: relative;
+				right: -6vw;
+				bottom: -2.5vh;
+
+				p {
+					font: 1.5vw/1.3 'LotteMartDream';
+					color: #555;
+				}
+
+				span {
+					font: bold 1.8vw/1.3 'LotteMartDream';
+					color: orange;
+				}
+			}
+
+			.cs_center {
+				img {
+					width: 30vw;
+					margin-top: -10px;
+					margin-right: -10px;
+				}
+			}
+		}
+
+		.footer_bottom {
+			width: 100%;
+			margin: 0 auto;
+
+			h6 {
+				display: none;
+			}
+
+			.award {
+				display: flex;
+				justify-content: space-between;
+
+				img {
+					width: 3vw;
+					height: auto;
+				}
+
+				span {
+					font: 0.8vw/1.3 'LotteMartDream';
+					color: #555;
+					margin-left: 0.5%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#footer {
+		width: 100%;
+		height: 24vh;
+		background-color: #e8dfd8;
+		margin: 5% 0% 0% 0%;
+		padding: 2%;
+
+		.footer_top {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+
+
+			h6 {
+				display: none;
+			}
+
+			.data {
+				position: absolute;
+				margin-left: 8vw;
+
+				img {
+					width: 2vw;
+				}
+
+				a {
+					font: 2vw/1 'LotteMartDream';
+					color: #555;
+					margin-right: 1vw;
+				}
+			}
+
+			.sns {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				top: 15vh;
+				left: 10vw;
+
+				span {
+					font: 2vw/2 'LotteMartDream';
+					color: #555;
+					display: flex;
+				}
+
+				a {
+					img {
+						width: 5vw;
+						margin-left: 10px;
+					}
+				}
+			}
+
+			.familysite {
+				font: 2vw/1.6 'LotteMartDream';
+				color: #555;
+				display: flex;
+				gap: 5px;
+				position: relative;
+				top: 16vh;
+				left: -15vw;
+
+				>div {
+					#site {
+						width: 20vw;
+						font: 2vw/1.6 'LotteMartDream';
+					}
+				}
+			}
+		}
+
+		.footer_middle {
+			width: 100%;
+			position: absolute;
+			margin-left: 8vw;
+
+			h6 {
+				display: none;
+			}
+
+			.address {
+				position: relative;
+				bottom: -3vh;
+
+				img {
+					width: 1.8vw;
+				}
+
+				span {
+					font: 2vw/1.8 'LotteMartDream';
+					color: #555;
+				}
+
+				p {
+					font: 2vw/1.5 'LotteMartDream';
+					color: #555;
+					margin-left: 3.3vw;
+				}
+			}
+
+			.call {
+				display: none;
+			}
+
+			.cs_center {
+				display: none;
+			}
+		}
+
+		.footer_bottom {
+			width: 100%;
+			margin: 0 auto;
+
+			h6 {
+				display: none;
+			}
+
+			.award {
+				display: none;
 			}
 		}
 	}

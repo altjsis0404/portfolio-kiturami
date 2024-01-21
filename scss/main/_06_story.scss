@@ -100,6 +100,111 @@
 	}
 }
 
-@media screen and (max-width: 1179px) {}
+@media screen and (max-width: 1179px) {
+	#story {
+		width: 100%;
+		height: 35vh;
 
-@media screen and (max-width: 400px) {}
+		.story_txt {
+			text-align: center;
+
+			h2 {
+				font: 2.5vw/1.5 'LotteMartHappy';
+				color: #555;
+			}
+
+			p {
+				font: 1.5vw/2 'LotteMartDream';
+				color: #555;
+			}
+		}
+
+		#story_inner {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+
+			nav {
+				width: 100%;
+				height: 7vh;
+				margin-left: 40vw;
+				display: flex;
+				gap: 30px;
+
+				a {
+					font: 1.5vw/2 'LotteMartDream';
+					color: #999;
+
+					&.on {
+						color: orange;
+					}
+				}
+			}
+
+			h6 {
+				display: none;
+			}
+
+			section {
+				width: 100%;
+				height: 100%;
+				margin-left: 13.3vw;
+				display: none;
+
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+
+				article {
+					width: 24vw;
+					height: auto;
+					padding: 1vw;
+					float: left;
+
+					h6 {
+						display: none;
+					}
+
+					.inner {
+						width: 100%;
+						height: 100%;
+						background-color: #e8dfd8;
+						transform: scale(0.5);
+						transition: 1s;
+						opacity: 0;
+
+						img {
+							width: 100%;
+							height: 100%;
+							background-size: cover;
+							box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+						}
+					}
+				}
+
+				&.on {
+					display: block;
+				}
+
+				&.active {
+					article {
+						margin: 0 auto;
+
+						.inner {
+							transform: scale(1);
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#story {
+		display: none;
+	}
+}

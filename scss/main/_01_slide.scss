@@ -23,8 +23,8 @@
 	color: black !important;
 	background-color: #fff;
 	opacity: 0.5;
-	padding: 15px 5px;
-	margin-left: 20px;
+	padding: 3vh 2.2vh;
+	margin: 0% 0% 0% 1%;
 	border-radius: 20px;
 }
 
@@ -32,14 +32,15 @@
 	color: black !important;
 	background-color: #fff;
 	opacity: 0.5;
-	padding: 15px 5px;
-	margin-right: 20px;
+	padding: 3vh 2.2vh;
+	margin: 0% 1% 0% 0%;
 	border-radius: 20px;
 }
 
 .swiper-button-prev:after {
 	font-size: 1.1rem !important;
 	font-weight: 600 !important;
+
 }
 
 .swiper-button-next:after {
@@ -74,7 +75,7 @@
 		justify-content: center;
 		text-align: center;
 		align-items: center;
-		margin-top: 4.5vh;
+		margin-top: 6.5vh;
 	}
 
 	.swiper-slide img {
@@ -88,8 +89,8 @@
 		color: black !important;
 		background-color: #fff;
 		opacity: 0.5;
-		padding: 15px 5px;
-		margin-left: 20px;
+		padding: 2vh 1.2vh;
+		margin: 0% 0% 0% 1%;
 		border-radius: 20px;
 	}
 
@@ -97,8 +98,8 @@
 		color: black !important;
 		background-color: #fff;
 		opacity: 0.5;
-		padding: 15px 5px;
-		margin-right: 20px;
+		padding: 1vh 1.2vh;
+		margin: 0% 1% 0% 0%;
 		border-radius: 20px;
 	}
 
@@ -138,7 +139,7 @@
 			justify-content: center;
 			text-align: center;
 			align-items: center;
-			margin-top: 9vh;
+			margin-top: 6.5vh;
 		}
 
 		.swiper-slide img {
