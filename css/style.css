@@ -421,7 +421,7 @@
 @media screen and (max-width: 400px) {
   #footer {
     width: 100%;
-    height: 24vh;
+    height: 15vh;
     background-color: #e8dfd8;
     margin: 5% 0% 0% 0%;
     padding: 2%;
@@ -452,7 +452,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 15vh;
+    top: 10vh;
     left: 10vw;
   }
   #footer .footer_top .sns span {
@@ -470,7 +470,7 @@
     display: flex;
     gap: 5px;
     position: relative;
-    top: 16vh;
+    top: 10vh;
     left: -15vw;
   }
   #footer .footer_top .familysite > div #site {
