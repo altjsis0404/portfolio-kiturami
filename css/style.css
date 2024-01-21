@@ -190,6 +190,9 @@
 }
 
 @media screen and (max-width: 1179px) {
+  #header {
+    height: 8vh;
+  }
   #header h1 a img {
     margin-left: calc(50vw - 180px);
   }
