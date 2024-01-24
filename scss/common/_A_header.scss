@@ -1,55 +1,64 @@
 #header {
 	width: 100%;
-	height: 6.5vh;
+	height: 60px;
 	background-color: #fff;
 	box-shadow: 0px 0px 2px #999;
 	text-align: center;
 	margin: 0 auto;
-	position: relative;
+	// position: relative;
+	display: flex;
+	justify-content: center;
 	transition: top 1s, width 1s;
 	position: fixed;
 	z-index: 10;
 
 	&.on {
 		width: 100%;
-		top: 0px;
-		right: 0px;
-		left: 0px;
+		// top: 0px;
+		// right: 0px;
+		// left: 0px;
 		position: fixed;
 	}
 
 	h1 {
-		height: 60px;
-		bottom: 0px;
-		left: 0px;
-		padding-left: 100px;
-		position: absolute;
+		// height: 60px;
+		// bottom: 0px;
+		// left: 0px;
+		// padding-left: 100px;
+
 
 		a {
-			font: 30px/60px 'LotteMartDream';
-			color: #fff;
+			// font: 30px/1px 'LotteMartDream';
+			// color: #fff;
 
 			img {
-				width: 180px;
-				margin-left: 5vw;
+				width: 160px;
+				// position: relative;
+				// display: flex;
+				// justify-content: center;
+				// margin-left: 5vw;
 			}
 		}
 	}
 
 	#header_gnb {
-		float: right;
-		margin-right: 34vw;
+		display: flex;
+		justify-content: center;
+		// float: right;
+		// margin-right: 34vw;
 
 		>li {
-			float: left;
+			width: 130px;
+			height: 60px;
 
+			// float: left;
 			>a {
-				width: 150px;
-				height: 60px;
-				font: 18px/60px 'LotteMartDream';
+				font: 18px/60px 'LotteMartHappy';
 				color: #284934;
 				text-align: center;
-				display: block;
+				opacity: 0.8;
+
+				// display: block;
 
 				&:hover {
 					color: orange;
@@ -62,31 +71,36 @@
 
 			.header_sub {
 				width: 100%;
-				height: 200px;
+				height: 25vh;
 				font: 15px/1.5 'LotteMartDream';
-				color: #fff;
 				background-color: #fff;
 				text-align: center;
 				top: 60px;
-				right: 0px;
+				left: 0px;
 				box-shadow: 0px 0px 2px #999;
 				position: absolute;
 				display: none;
 
 				>div {
-					width: 900px;
+					width: 360px;
+					display: flex;
+					justify-content: left;
 					margin: 0 auto;
 
-					ul {
-						float: left;
-						margin-top: 10px;
 
-						li {
-							width: 150px;
+					>ul {
+						margin-top: 20px;
 
-							a {
-								font: 13px/1.6 'LotteMartDream';
-								color: #888;
+
+
+						>li {
+							width: 130px;
+
+
+							>a {
+								font: 13px/1.7 'LotteMartDream';
+								color: #555;
+
 
 								&:hover {
 									color: orange;
@@ -95,124 +109,15 @@
 						}
 
 						.header_inner {
+							width: 130px;
+							background-color: #ededed;
+
+
 							>a {
-								font: 15px/1 'LotteMartDream';
-								color: #284934;
-								text-shadow: 0.5px 0.5px 1px #999;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.header_btnCall {
-		width: 20px;
-		height: 20px;
-		top: 50%;
-		right: 30px;
-		transform: translateY(-50%);
-		display: none;
-		position: absolute;
-
-
-		&::before {
-
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			top: 0;
-			left: 0;
-			content: '';
-			display: block;
-			transition: top 0.5s 0s, transform 0.5s 0.5s;
-			position: absolute;
-		}
-
-		&::after {
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			bottom: 0;
-			left: 0;
-			content: '';
-			display: block;
-			transition: bottom 0.5s 0s, transform 0.5s 0.5s;
-			position: absolute;
-		}
-
-		span {
-
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			top: 50%;
-			margin-top: -1px;
-			transition: 0.5s;
-			text-indent: -9999999px;
-			display: block;
-			position: absolute;
-		}
-
-		&.on {
-			&::before {
-				top: 50%;
-				margin-top: -1px;
-				transform: rotate(45deg);
-			}
-
-			&::after {
-				bottom: 50%;
-				margin-bottom: -1px;
-				transform: rotate(-45deg);
-			}
-
-			span {
-				transform: translateX(100%);
-				opacity: 0;
-			}
-		}
-	}
-
-	.header_gnb_mo {
-		width: 270px;
-		height: 100vh;
-		background-color: #333;
-		top: 0;
-		// left: -270px;
-		padding: 35px 30px;
-		position: fixed;
-		z-index: 10;
-		transition: all 0.5s;
-		display: none;
-
-		&.on {
-			left: 0px;
-		}
-
-		li {
-
-			a {
-				font: 24px/2 'LotteMartDream';
-				color: #fff;
-				text-align: center;
-				display: block;
-			}
-
-			.header_sub_mo {
-				display: none;
-
-				div {
-					ul {
-						li {
-							a {
-								font: 14px/1 'LotteMartDream';
-								color: #888;
-								text-align: center;
-								border-bottom: 1px solid #eee;
-								padding: 20px 0px;
-								display: block;
+								font: 13px/1.2 'LotteMartHappy';
+								color: #555;
+								// text-shadow: 0.5px 0.5px 1px #999;
+								// opacity: 0.9;
 							}
 						}
 					}
@@ -222,32 +127,6 @@
 	}
 }
 
-
-@media screen and (max-width: 1179px) {
-	#header {
-		height: 8vh;
-
-		h1 {
-			a {
-				img {
-					margin-left: calc(50vw - 180px);
-				}
-			}
-		}
-
-		#header_gnb {
-			display: none;
-		}
-
-		.header_btnCall {
-			display: none;
-		}
-
-		.header_gnb_mo {
-			display: none;
-		}
-	}
-}
-
+@media screen and (max-width: 1179px) {}
 
 @media screen and (max-width: 400px) {}
