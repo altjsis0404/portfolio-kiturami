@@ -416,10 +416,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .swiper {
   width: 100%;
 }
@@ -923,6 +919,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 #brand .brand_inner_top div .brand_inner_mid article {
   width: 20vw;
@@ -934,6 +931,7 @@ body {
   transition-delay: 0s;
   overflow: hidden;
   z-index: 1;
+  position: absolute;
 }
 #brand .brand_inner_top div .brand_inner_mid article .wrap {
   width: 100%;
@@ -973,10 +971,9 @@ body {
 }
 #brand .brand_inner_top div .brand_inner_mid article .wrap .desc {
   width: 100%;
-  font: 16px/1.3 "LotteMartDream";
+  font: 0.8vw/1.3 "LotteMartDream";
   color: #555;
   top: 60%;
-  left: 5vw;
   transition: 0.5s;
   position: absolute;
   opacity: 0;
@@ -1032,25 +1029,24 @@ body {
   position: relative;
 }
 #brand .brand_inner_top div .brand_inner_mid article .close {
-  font: bold 20px/1 "LotteMartDream";
+  font: bold 1vw/1 "LotteMartDream";
   color: #555;
   top: 10vh;
-  right: -10vw;
   transition: all 0.5s;
   position: absolute;
   cursor: pointer;
   opacity: 0;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(1) {
-  transform: translateX(-120%) translateY(0%);
+  transform: translateX(0%) translateY(0%);
   opacity: 0;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(2) {
-  transform: translateX(-20%) translateY(0%);
+  transform: translateX(90%) translateY(0%);
   opacity: 0.8;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(3) {
-  transform: translateX(0%) translateY(0%);
+  transform: translateX(198%) translateY(0%);
   opacity: 1;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(3) .txt h2::before {
@@ -1073,36 +1069,45 @@ body {
   opacity: 0;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(4) {
-  transform: translateX(20%) translateY(0%);
+  transform: translateX(306%) translateY(0%);
   opacity: 0.8;
 }
 #brand .brand_inner_top div .brand_inner_mid article:nth-of-type(5) {
-  transform: translateX(120%) translateY(0%);
+  transform: translateX(360%) translateY(0%);
   opacity: 0;
 }
 #brand .brand_inner_top div .brand_inner_mid article.on {
-  width: 50vw;
-  height: 50vh;
+  width: 35vw;
+  height: 40vh;
   top: 0;
-  left: 0;
-  transition-duration: 0.8s;
-  transition-delay: 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-duration: 1s;
+  transition-delay: 1s;
   z-index: 2;
 }
 #brand .brand_inner_top div .brand_inner_mid article.on .wrap {
   width: 60%;
   height: 100%;
-  transition: 0.5s 0.5s;
+  transition: 0.1s 0.5s;
+  background-color: #e8dfd8;
+  text-align: left;
 }
 #brand .brand_inner_top div .brand_inner_mid article.on .wrap h2 {
-  bottom: calc(100% - 5vw - 100px);
-  top: 28%;
-  left: 3vw;
+  top: 10%;
+  left: 10%;
   transition: 0.5s;
 }
+#brand .brand_inner_top div .brand_inner_mid article.on .wrap strong {
+  display: none;
+}
+#brand .brand_inner_top div .brand_inner_mid article.on .wrap P {
+  display: none;
+}
 #brand .brand_inner_top div .brand_inner_mid article.on .wrap .desc {
-  top: 36%;
-  left: 3vw;
+  text-align: left;
+  top: 25%;
+  left: 10%;
   transition: 1s 1s;
   opacity: 1;
 }
@@ -1116,11 +1121,12 @@ body {
   opacity: 0.5;
 }
 #brand .brand_inner_top div .brand_inner_mid article.on .close {
-  top: 4vh;
-  right: 3vw;
-  transition: 0.5s 1s;
-  transition-timing-function: cubic-bezier(0.48, -0.67, 0.54, 1.68);
+  top: 35vh;
+  right: 2vw;
   opacity: 1;
+}
+#brand .brand_inner_top div .brand_inner_mid article.on .close:hover {
+  color: orange;
 }
 #brand .brand_inner_top div .brand_inner_mid article.hide {
   margin-top: -1000px;
@@ -1134,7 +1140,7 @@ body {
   justify-content: center;
   transition: 0.5s;
   position: relative;
-  top: 2%;
+  top: 70%;
   pointer-events: auto;
 }
 #brand .brand_btn.off {
@@ -1171,16 +1177,6 @@ body {
   transition: 0.5s;
   display: inline-block;
 }
-#brand .brand_btn p::before {
-  width: 0%;
-  height: 1px;
-  background-color: #555;
-  top: 50%;
-  transition: 0.2s 0.2s;
-  opacity: 1;
-  position: absolute;
-  content: "";
-}
 #brand .brand_btn p::after {
   width: 0px;
   height: 1px;
@@ -1190,12 +1186,51 @@ body {
   position: absolute;
   content: "";
 }
-
-@media screen and (max-width: 400px) {
-  #brand {
-    display: none;
-  }
+#brand .brand_btn p.brand_next {
+  text-align: left;
 }
+#brand .brand_btn p.brand_next span {
+  font: 15px/1 "LotteMartHappy";
+  color: #999;
+  transform: translateY(-5px);
+}
+#brand .brand_btn p.brand_next::before {
+  left: 0;
+}
+#brand .brand_btn p.brand_next::after {
+  right: 0;
+  transform-origin: right center;
+  transform: rotate(40deg);
+}
+#brand .brand_btn p.brand_prev {
+  text-align: right;
+}
+#brand .brand_btn p.brand_prev.off {
+  right: 5vw;
+  opacity: 0;
+}
+#brand .brand_btn p.brand_prev span {
+  font: 15px/1 "LotteMartHappy";
+  color: #999;
+  transform: translateY(20px);
+}
+#brand .brand_btn p.brand_prev::before {
+  right: 0;
+}
+#brand .brand_btn p.brand_prev::after {
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(40deg);
+}
+#brand .brand_btn p:hover.brand_next::before, #brand .brand_btn p:hover.brand_prev::before {
+  width: 100%;
+  transition: 0.2s;
+}
+#brand .brand_btn p:hover.brand_next::after, #brand .brand_btn p:hover.brand_prev::after {
+  width: 40px;
+  transition: 0.2s 0.2s;
+}
+
 #banner2 {
   width: 100%;
   background-color: #fff;
