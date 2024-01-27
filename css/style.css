@@ -377,7 +377,6 @@ a {
 }
 #baro {
   width: 100%;
-  position: relative;
 }
 #baro .baro_inner_top {
   width: 100%;
