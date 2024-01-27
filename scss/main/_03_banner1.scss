@@ -5,6 +5,7 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	margin-bottom: 60px;
 
 	a {
 		width: 1500px;
@@ -17,7 +18,6 @@
 			height: auto;
 			object-fit: cover;
 		}
-
 
 		.banner1_inner {
 			width: 80%;
@@ -89,7 +89,7 @@
 				position: absolute;
 
 				h2 {
-					font: 22px/2 'LotteMartHappy';
+					font: 20px/2 'LotteMartHappy';
 					color: #555;
 				}
 

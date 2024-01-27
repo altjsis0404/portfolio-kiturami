@@ -103,107 +103,22 @@
 
 @media screen and (max-width: 800px) {
 	#header {
-		width: 100%;
-
-		&.on {
-			width: 100%;
-		}
+		&.on {}
 
 		.header_inner_top {
-			width: 100%;
-			height: 60px;
-			background-color: #fff;
-			box-shadow: 0px 0px 2px #999;
-			text-align: center;
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-			transition: top 1s, width 1s;
-			position: fixed;
-			z-index: 10;
-
 			h1 {
 				a {
-
-					img {
-						width: 160px;
-					}
+					img {}
 				}
 			}
 
 			#header_gnb {
 				display: none;
-				justify-content: center;
-
-				>li {
-					width: 130px;
-					height: 60px;
-
-					>a {
-						font: 18px/60px 'LotteMartHappy';
-						color: #284934;
-						text-align: center;
-						opacity: 0.8;
-
-						&:hover {
-							color: orange;
-						}
-
-						&.on {
-							color: orange;
-						}
-					}
-
-					.header_sub {
-						width: 100%;
-						height: 25vh;
-						font: 15px/1.5 'LotteMartDream';
-						background-color: #fff;
-						text-align: center;
-						top: 60px;
-						left: 0px;
-						box-shadow: 0px 0px 2px #999;
-						position: absolute;
-						display: none;
-
-						>div {
-							width: 360px;
-							display: flex;
-							justify-content: left;
-							margin: 0 auto;
-
-							>ul {
-								margin-top: 20px;
-
-								>li {
-									width: 130px;
-
-									>a {
-										font: 13px/1.7 'LotteMartDream';
-										color: #555;
-
-										&:hover {
-											color: orange;
-										}
-									}
-								}
-
-								.header_inner {
-									width: 130px;
-									background-color: #ededed;
-
-									>a {
-										font: 13px/1.2 'LotteMartHappy';
-										color: #555;
-									}
-								}
-							}
-						}
-					}
-				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+	// 내용없음
+}
