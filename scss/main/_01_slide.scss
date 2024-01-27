@@ -1,5 +1,8 @@
 .swiper {
 	width: 100%;
+	position: sticky;
+	top: 60px;
+	margin-bottom: 60px;
 }
 
 .swiper-slide {
@@ -9,7 +12,6 @@
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	margin-top: 5vh;
 }
 
 .swiper-slide img {
@@ -23,7 +25,7 @@
 	color: black !important;
 	background-color: #fff;
 	opacity: 0.5;
-	padding: 3vh 2.2vh;
+	padding: 1.5vh 2.5vh;
 	margin: 0% 0% 0% 1%;
 	border-radius: 20px;
 }
@@ -32,7 +34,7 @@
 	color: black !important;
 	background-color: #fff;
 	opacity: 0.5;
-	padding: 3vh 2.2vh;
+	padding: 1.5vh 2.5vh;
 	margin: 0% 1% 0% 0%;
 	border-radius: 20px;
 }
@@ -62,7 +64,16 @@
 	background: #284934 !important;
 }
 
+@media screen and (max-width: 800px) {
+	// 내용없음
+}
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 400px) {
+	.swiper-button-prev {
+		opacity: 0.2;
+	}
 
-@media screen and (max-width: 400px) {}
+	.swiper-button-next {
+		opacity: 0.2;
+	}
+}
