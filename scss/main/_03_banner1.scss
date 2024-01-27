@@ -1,7 +1,6 @@
 #banner1 {
 	width: 100%;
 	background-color: #fff;
-	margin: 5% 0% 5% 0%;
 	overflow: hidden;
 
 	a {
@@ -52,68 +51,6 @@
 	}
 }
 
-@media screen and (max-width: 1179px) {
-	#banner1 {
-		a {
-			width: 100%;
-			margin: 0 auto;
-			position: relative;
-			display: block;
+@media screen and (max-width: 1179px) {}
 
-			.banner1_inner {
-				width: 80%;
-				top: 32%;
-				left: 15.5%;
-
-				h2 {
-					font: 2.5vw/1 'LotteMartHappy';
-				}
-
-				h3 {
-					font: 1.5vw/6 'LotteMartDream';
-				}
-
-				h4 {
-					font: 1.5vw/9 'LotteMartDream';
-				}
-
-				h5 {
-					font: bold 1.5vw/14 'LotteMartDream';
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 400px) {
-	#banner1 {
-		a {
-			width: 100%;
-			margin: 0 auto;
-			position: relative;
-			display: block;
-
-			.banner1_inner {
-				width: 80%;
-				top: 24%;
-				left: 9%;
-
-				h2 {
-					font: 4vw/1 'LotteMartHappy';
-				}
-
-				h3 {
-					font: 2.5vw/6 'LotteMartDream';
-				}
-
-				h4 {
-					font: 2.5vw/9 'LotteMartDream';
-				}
-
-				h5 {
-					font: bold 2.5vw/13 'LotteMartDream';
-				}
-			}
-		}
-	}
-}
+@media screen and (max-width: 400px) {}

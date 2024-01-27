@@ -94,96 +94,101 @@
 
 #footer {
   width: 100%;
+  height: 35vh;
   background-color: #e8dfd8;
-  margin: 5% 0% 0% 0%;
-  padding: 5%;
-}
-#footer .footer_top {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-#footer .footer_top h6 {
-  display: none;
-}
-#footer .footer_top .data img {
-  width: 15px;
-}
-#footer .footer_top .data a {
-  font: 15px/1.2 "LotteMartDream";
-  color: #555;
-  margin-right: 20px;
-}
-#footer .footer_top .sns {
-  position: relative;
-  right: 90px;
-  display: flex;
-  justify-content: space-between;
-}
-#footer .footer_top .sns span {
-  font: 15px/1.8 "LotteMartDream";
-  color: #555;
-}
-#footer .footer_top .sns a img {
-  width: 30px;
-  margin-left: 10px;
-}
-#footer .footer_top .familysite {
-  font: 15px/1.2 "LotteMartDream";
-  color: #555;
-  display: flex;
-  gap: 10px;
-}
-#footer .footer_middle {
+#footer .footer_inner {
   width: 1500px;
+}
+#footer .footer_inner .footer_top {
+  width: 100%;
+  height: 20vh;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-#footer .footer_middle h6 {
+#footer .footer_inner .footer_top .footer_inner_left {
+  width: 40%;
+  height: 150px;
+}
+#footer .footer_inner .footer_top .footer_inner_left h6 {
   display: none;
 }
-#footer .footer_middle .address {
-  position: relative;
-  bottom: -10px;
+#footer .footer_inner .footer_top .footer_inner_left .data img {
+  width: 12px;
+  opacity: 0.5;
 }
-#footer .footer_middle .address img {
-  width: 13px;
-}
-#footer .footer_middle .address span {
-  font: 15px/1.8 "LotteMartDream";
+#footer .footer_inner .footer_top .footer_inner_left .data a {
+  font: 15px/1 "LotteMartDream";
   color: #555;
 }
-#footer .footer_middle .address p {
-  font: 15px/1.8 "LotteMartDream";
+#footer .footer_inner .footer_top .footer_inner_left .address {
+  position: relative;
+}
+#footer .footer_inner .footer_top .footer_inner_left .address a img {
+  width: 11px;
+  opacity: 0.5;
+}
+#footer .footer_inner .footer_top .footer_inner_left .address span {
+  font: 15px/1.5 "LotteMartDream";
+  color: #555;
+}
+#footer .footer_inner .footer_top .footer_inner_left .address p {
+  font: 13px/1.5 "LotteMartDream";
   color: #555;
   margin-left: 17px;
 }
-#footer .footer_middle .call {
-  position: relative;
-  right: -9.5%;
-  bottom: -35px;
+#footer .footer_inner .footer_top .footer_inner_left .familysite {
+  height: 20px;
 }
-#footer .footer_middle .call p {
+#footer .footer_inner .footer_top .footer_inner_left .familysite select {
+  font: 13px/1 "LotteMartDream";
+  color: #555;
+}
+#footer .footer_inner .footer_top .footer_inner_center {
+  width: 25%;
+  height: 150px;
+}
+#footer .footer_inner .footer_top .footer_inner_center h6 {
+  display: none;
+}
+#footer .footer_inner .footer_top .footer_inner_center .sns {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+#footer .footer_inner .footer_top .footer_inner_center .sns span {
+  font: 15px/1.8 "LotteMartDream";
+  color: #555;
+}
+#footer .footer_inner .footer_top .footer_inner_center .sns a img {
+  width: 30px;
+  margin-left: 10px;
+}
+#footer .footer_inner .footer_top .footer_inner_center .call p {
   font: 28px/1.3 "LotteMartDream";
   color: #555;
 }
-#footer .footer_middle .call span {
+#footer .footer_inner .footer_top .footer_inner_center .call span {
   font: bold 28px/1.3 "LotteMartDream";
   color: orange;
 }
-#footer .footer_middle .cs_center img {
-  width: 500px;
-  margin-top: -10px;
-  margin-right: -10px;
+#footer .footer_inner .footer_top .footer_inner_right {
+  width: 35%;
+  height: 150px;
+}
+#footer .footer_inner .footer_top .footer_inner_right h6 {
+  display: none;
+}
+#footer .footer_inner .footer_top .footer_inner_right .cs_center img {
+  width: 100%;
 }
 #footer .footer_bottom {
-  width: 1500px;
-  margin: 0 auto;
-}
-#footer .footer_bottom h6 {
-  display: none;
+  width: 100%;
 }
 #footer .footer_bottom .award {
   display: flex;
@@ -196,210 +201,8 @@
 #footer .footer_bottom .award span {
   font: 9px/1.3 "LotteMartDream";
   color: #555;
-  margin-left: -75px;
 }
 
-@media screen and (max-width: 1179px) {
-  #footer {
-    width: 100%;
-    background-color: #e8dfd8;
-    margin: 5% 0% 0% 0%;
-  }
-  #footer .footer_top {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  #footer .footer_top h6 {
-    display: none;
-  }
-  #footer .footer_top .data img {
-    width: 1vw;
-  }
-  #footer .footer_top .data a {
-    font: 1vw/1 "LotteMartDream";
-    color: #555;
-    margin-right: 1vw;
-  }
-  #footer .footer_top .sns {
-    position: relative;
-    right: 3.5vw;
-    display: flex;
-    justify-content: space-between;
-  }
-  #footer .footer_top .sns span {
-    font: 1vw/2 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_top .sns a img {
-    width: 2vw;
-    margin-left: 10px;
-  }
-  #footer .footer_top .familysite {
-    font: 1vw/1.6 "LotteMartDream";
-    color: #555;
-    display: flex;
-    gap: 10px;
-  }
-  #footer .footer_middle {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  #footer .footer_middle h6 {
-    display: none;
-  }
-  #footer .footer_middle .address {
-    position: relative;
-    bottom: -1vh;
-  }
-  #footer .footer_middle .address img {
-    width: 1vw;
-  }
-  #footer .footer_middle .address span {
-    font: 1vw/1.8 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_middle .address p {
-    font: 1vw/1.8 "LotteMartDream";
-    color: #555;
-    margin-left: 17px;
-  }
-  #footer .footer_middle .call {
-    position: relative;
-    right: -6vw;
-    bottom: -2.5vh;
-  }
-  #footer .footer_middle .call p {
-    font: 1.5vw/1.3 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_middle .call span {
-    font: bold 1.8vw/1.3 "LotteMartDream";
-    color: orange;
-  }
-  #footer .footer_middle .cs_center img {
-    width: 30vw;
-    margin-top: -10px;
-    margin-right: -10px;
-  }
-  #footer .footer_bottom {
-    width: 100%;
-    margin: 0 auto;
-  }
-  #footer .footer_bottom h6 {
-    display: none;
-  }
-  #footer .footer_bottom .award {
-    display: flex;
-    justify-content: space-between;
-  }
-  #footer .footer_bottom .award img {
-    width: 3vw;
-    height: auto;
-  }
-  #footer .footer_bottom .award span {
-    font: 0.8vw/1.3 "LotteMartDream";
-    color: #555;
-    margin-left: 0.5%;
-  }
-}
-@media screen and (max-width: 400px) {
-  #footer {
-    width: 100%;
-    height: 15vh;
-    background-color: #e8dfd8;
-    margin: 5% 0% 0% 0%;
-  }
-  #footer .footer_top {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-  }
-  #footer .footer_top h6 {
-    display: none;
-  }
-  #footer .footer_top .data {
-    position: absolute;
-  }
-  #footer .footer_top .data img {
-    width: 2vw;
-  }
-  #footer .footer_top .data a {
-    font: 2vw/1 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_top .sns {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 10vh;
-    left: 10vw;
-  }
-  #footer .footer_top .sns span {
-    font: 2vw/2 "LotteMartDream";
-    color: #555;
-    display: flex;
-  }
-  #footer .footer_top .sns a img {
-    width: 5vw;
-  }
-  #footer .footer_top .familysite {
-    font: 2vw/1.6 "LotteMartDream";
-    color: #555;
-    display: flex;
-    gap: 5px;
-    position: relative;
-    top: 10vh;
-    left: -15vw;
-  }
-  #footer .footer_top .familysite > div #site {
-    width: 20vw;
-    font: 2vw/1.6 "LotteMartDream";
-  }
-  #footer .footer_middle {
-    width: 100%;
-    position: absolute;
-  }
-  #footer .footer_middle h6 {
-    display: none;
-  }
-  #footer .footer_middle .address {
-    position: relative;
-    bottom: -3vh;
-  }
-  #footer .footer_middle .address img {
-    width: 1.8vw;
-  }
-  #footer .footer_middle .address span {
-    font: 2vw/1.8 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_middle .address p {
-    font: 2vw/1.5 "LotteMartDream";
-    color: #555;
-  }
-  #footer .footer_middle .call {
-    display: none;
-  }
-  #footer .footer_middle .cs_center {
-    display: none;
-  }
-  #footer .footer_bottom {
-    width: 100%;
-    margin: 0 auto;
-  }
-  #footer .footer_bottom h6 {
-    display: none;
-  }
-  #footer .footer_bottom .award {
-    display: none;
-  }
-}
 * {
   margin: 0px;
   padding: 0px;
@@ -479,330 +282,286 @@ a {
   background: #284934 !important;
 }
 
-@media screen and (max-width: 1179px) {
-  .swiper {
-    width: 100%;
-  }
-  .swiper-slide {
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 6.5vh;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
-  }
-  .swiper-button-prev {
-    color: black !important;
-    background-color: #fff;
-    opacity: 0.5;
-    padding: 2vh 1.2vh;
-    margin: 0% !important;
-    border-radius: 20px;
-  }
-  .swiper-button-next {
-    color: black !important;
-    background-color: #fff;
-    opacity: 0.5;
-    padding: 1vh 1.2vh;
-    margin: 0% !important;
-    border-radius: 20px;
-  }
-  .swiper-button-prev:after {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-  }
-  .swiper-button-next:after {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-  }
-  .swiper-button-prev:hover {
-    background: orange !important;
-    opacity: 0.4;
-  }
-  .swiper-button-next:hover {
-    background: orange !important;
-    opacity: 0.4;
-  }
-  .swiper-pagination-bullet {
-    background: #284934 !important;
-  }
-}
-@media screen and (max-width: 1179px) and (max-width: 400px) {
-  .swiper {
-    width: 100%;
-  }
-  .swiper-slide {
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 6.5vh;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
-  }
-  .swiper-button-prev {
-    color: black !important;
-    background-color: #fff;
-    opacity: 0.5;
-    padding: 15px 5px;
-    margin: 10vh 0 0 3vw;
-    border-radius: 20px;
-  }
-  .swiper-button-next {
-    color: black !important;
-    background-color: #fff;
-    opacity: 0.5;
-    padding: 15px 5px;
-    margin-right: 20px;
-    border-radius: 20px;
-  }
-  .swiper-button-prev:after {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-  }
-  .swiper-button-next:after {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-  }
-  .swiper-button-prev:hover {
-    background: orange !important;
-    opacity: 0.4;
-  }
-  .swiper-button-next:hover {
-    background: orange !important;
-    opacity: 0.4;
-  }
-  .swiper-pagination-bullet {
-    background: #284934 !important;
-  }
-}
 #baro {
   width: 100%;
 }
-#baro .baro_inner {
+#baro .baro_inner_top {
   width: 100%;
-  margin: 0 auto;
-  margin-top: 5%;
-  position: relative;
-}
-#baro .baro_inner .txt {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 2%;
 }
-#baro .baro_inner .txt h2 {
-  font: 1.7vw/1.5 "LotteMartHappy";
+#baro .baro_inner_top .txt {
+  width: 100%;
+}
+#baro .baro_inner_top .txt h2 {
+  font: 35px/1.5 "LotteMartHappy";
   color: #555;
 }
-#baro .baro_inner .txt p {
-  font: 0.9vw/1.5 "LotteMartDream";
+#baro .baro_inner_top .txt p {
+  font: 18px/1.5 "LotteMartDream";
   color: #555;
 }
-#baro .baro_inner .wrap {
-  width: 30%;
+#baro .baro_inner_bottom .wrap {
+  width: 500px;
+  height: 240px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-#baro .baro_inner .wrap .leftbaro {
   text-align: center;
+}
+#baro .baro_inner_bottom .wrap .leftbaro {
   display: inline-block;
 }
-#baro .baro_inner .wrap .leftbaro a {
+#baro .baro_inner_bottom .wrap .leftbaro a {
   width: 200px;
   height: 200px;
 }
-#baro .baro_inner .wrap .leftbaro a img {
+#baro .baro_inner_bottom .wrap .leftbaro a img {
   width: 50px;
   height: 50px;
 }
-#baro .baro_inner .wrap .leftbaro a h3 {
-  font: 0.8vw/2 "LotteMartDream";
+#baro .baro_inner_bottom .wrap .leftbaro a h3 {
+  font: 16px/2 "LotteMartDream";
   color: #555;
-  margin-bottom: 3vh;
 }
-#baro .baro_inner .wrap .leftbaro a h3:hover {
+#baro .baro_inner_bottom .wrap .leftbaro a h3:hover {
   color: orange;
 }
-#baro .baro_inner .wrap .centerbaro {
-  text-align: center;
+#baro .baro_inner_bottom .wrap .centerbaro {
   display: inline-block;
 }
-#baro .baro_inner .wrap .centerbaro a {
+#baro .baro_inner_bottom .wrap .centerbaro a {
   width: 200px;
   height: 200px;
 }
-#baro .baro_inner .wrap .centerbaro a img {
+#baro .baro_inner_bottom .wrap .centerbaro a img {
   width: 50px;
   height: 50px;
 }
-#baro .baro_inner .wrap .centerbaro a h3 {
-  font: 0.8vw/2 "LotteMartDream";
+#baro .baro_inner_bottom .wrap .centerbaro a h3 {
+  font: 16px/2 "LotteMartDream";
   color: #555;
-  margin-bottom: 3vh;
 }
-#baro .baro_inner .wrap .centerbaro a h3:hover {
+#baro .baro_inner_bottom .wrap .centerbaro a h3:hover {
   color: orange;
 }
-#baro .baro_inner .wrap .rightbaro {
-  text-align: center;
+#baro .baro_inner_bottom .wrap .rightbaro {
   display: inline-block;
 }
-#baro .baro_inner .wrap .rightbaro a {
+#baro .baro_inner_bottom .wrap .rightbaro a {
   width: 200px;
   height: 200px;
 }
-#baro .baro_inner .wrap .rightbaro a img {
+#baro .baro_inner_bottom .wrap .rightbaro a img {
   width: 50px;
   height: 50px;
 }
-#baro .baro_inner .wrap .rightbaro a h3 {
-  font: 0.8vw/2 "LotteMartDream";
+#baro .baro_inner_bottom .wrap .rightbaro a h3 {
+  font: 16px/2 "LotteMartDream";
   color: #555;
-  margin-bottom: 3vh;
 }
-#baro .baro_inner .wrap .rightbaro a h3:hover {
+#baro .baro_inner_bottom .wrap .rightbaro a h3:hover {
   color: orange;
 }
 
 @media screen and (max-width: 1179px) {
-  #baro .baro_inner {
-    margin-top: 5%;
+  #baro {
+    width: 100%;
   }
-  #baro .baro_inner .txt {
-    margin-bottom: 2%;
+  #baro .baro_inner_top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  #baro .baro_inner .txt h2 {
-    font: 2.5vw/1.5 "LotteMartHappy";
+  #baro .baro_inner_top .txt {
+    width: 100%;
   }
-  #baro .baro_inner .txt p {
-    font: 1.5vw/1.5 "LotteMartDream";
+  #baro .baro_inner_top .txt h2 {
+    font: 30px/1.5 "LotteMartHappy";
+    color: #555;
   }
-  #baro .baro_inner .wrap {
-    width: 50%;
+  #baro .baro_inner_top .txt p {
+    font: 16px/1.5 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap {
+    width: 400px;
+    height: 240px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
   }
-  #baro .baro_inner .wrap .leftbaro a {
-    width: 150px;
-    height: 150px;
+  #baro .baro_inner_bottom .wrap .leftbaro {
+    display: inline-block;
   }
-  #baro .baro_inner .wrap .leftbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .leftbaro a {
+    width: 200px;
+    height: 200px;
   }
-  #baro .baro_inner .wrap .leftbaro a h3 {
-    font: 1.5vw/2 "LotteMartDream";
-    margin-bottom: 3vh;
+  #baro .baro_inner_bottom .wrap .leftbaro a img {
+    width: 50px;
+    height: 50px;
   }
-  #baro .baro_inner .wrap .leftbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .leftbaro a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .leftbaro a h3:hover {
     color: orange;
   }
-  #baro .baro_inner .wrap .centerbaro a {
-    width: 150px;
-    height: 150px;
+  #baro .baro_inner_bottom .wrap .centerbaro {
+    display: inline-block;
   }
-  #baro .baro_inner .wrap .centerbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .centerbaro a {
+    width: 200px;
+    height: 200px;
   }
-  #baro .baro_inner .wrap .centerbaro a h3 {
-    font: 1.5vw/2 "LotteMartDream";
-    margin-bottom: 3vh;
+  #baro .baro_inner_bottom .wrap .centerbaro a img {
+    width: 50px;
+    height: 50px;
   }
-  #baro .baro_inner .wrap .centerbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .centerbaro a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .centerbaro a h3:hover {
     color: orange;
   }
-  #baro .baro_inner .wrap .rightbaro a {
-    width: 150px;
-    height: 150px;
+  #baro .baro_inner_bottom .wrap .rightbaro {
+    display: inline-block;
   }
-  #baro .baro_inner .wrap .rightbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .rightbaro a {
+    width: 200px;
+    height: 200px;
   }
-  #baro .baro_inner .wrap .rightbaro a h3 {
-    font: 1.5vw/2 "LotteMartDream";
-    margin-bottom: 3vh;
+  #baro .baro_inner_bottom .wrap .rightbaro a img {
+    width: 50px;
+    height: 50px;
   }
-  #baro .baro_inner .wrap .rightbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .rightbaro a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .rightbaro a h3:hover {
     color: orange;
   }
 }
 @media screen and (max-width: 400px) {
   #baro {
-    margin-top: 5vh;
+    width: 100%;
   }
-  #baro .baro_inner .txt {
-    margin-bottom: 10%;
+  #baro .baro_inner_top {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  #baro .baro_inner .txt h2 {
-    font: 5vw/1.7 "LotteMartHappy";
+  #baro .baro_inner_top .txt {
+    width: 90%;
   }
-  #baro .baro_inner .txt p {
-    font: 3vw/1.5 "LotteMartHappy";
+  #baro .baro_inner_top .txt h2 {
+    font: 28px/1.5 "LotteMartHappy";
+    color: #555;
   }
-  #baro .baro_inner .wrap {
-    width: 80%;
+  #baro .baro_inner_top .txt p {
+    display: none;
   }
-  #baro .baro_inner .wrap .leftbaro a {
-    width: 80px;
-    height: 80px;
+  #baro .baro_inner_bottom .wrap {
+    width: 260px;
+    height: 310px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
   }
-  #baro .baro_inner .wrap .leftbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .leftbaro {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .leftbaro a h3 {
-    font: 3.5vw/2 "LotteMartHappy";
+  #baro .baro_inner_bottom .wrap .leftbaro > div {
+    width: 130px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .leftbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .leftbaro > div a {
+    width: 130px;
+    height: 100px;
+  }
+  #baro .baro_inner_bottom .wrap .leftbaro > div a img {
+    width: 50px;
+    height: 50px;
+  }
+  #baro .baro_inner_bottom .wrap .leftbaro > div a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .leftbaro > div a h3:hover {
     color: orange;
   }
-  #baro .baro_inner .wrap .centerbaro a {
-    width: 80px;
-    height: 80px;
+  #baro .baro_inner_bottom .wrap .centerbaro {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .centerbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .centerbaro > div {
+    width: 130px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .centerbaro a h3 {
-    font: 3.5vw/2 "LotteMartHappy";
+  #baro .baro_inner_bottom .wrap .centerbaro > div a {
+    width: 130px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .centerbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .centerbaro > div a img {
+    width: 50px;
+    height: 50px;
+  }
+  #baro .baro_inner_bottom .wrap .centerbaro > div a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .centerbaro > div a h3:hover {
     color: orange;
   }
-  #baro .baro_inner .wrap .rightbaro a {
-    width: 80px;
-    height: 80px;
+  #baro .baro_inner_bottom .wrap .rightbaro {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .rightbaro a img {
-    width: 30px;
-    height: 30px;
+  #baro .baro_inner_bottom .wrap .rightbaro > div {
+    width: 130px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .rightbaro a h3 {
-    font: 3.5vw/2 "LotteMartHappy";
+  #baro .baro_inner_bottom .wrap .rightbaro > div a {
+    width: 130px;
+    height: 100px;
   }
-  #baro .baro_inner .wrap .rightbaro a h3:hover {
+  #baro .baro_inner_bottom .wrap .rightbaro > div a img {
+    width: 50px;
+    height: 50px;
+  }
+  #baro .baro_inner_bottom .wrap .rightbaro > div a h3 {
+    font: 14px/2 "LotteMartDream";
+    color: #555;
+  }
+  #baro .baro_inner_bottom .wrap .rightbaro > div a h3:hover {
     color: orange;
   }
 }
 #banner1 {
   width: 100%;
   background-color: #fff;
-  margin: 5% 0% 5% 0%;
   overflow: hidden;
 }
 #banner1 a {
@@ -845,56 +604,6 @@ a {
   position: absolute;
 }
 
-@media screen and (max-width: 1179px) {
-  #banner1 a {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-  }
-  #banner1 a .banner1_inner {
-    width: 80%;
-    top: 32%;
-    left: 15.5%;
-  }
-  #banner1 a .banner1_inner h2 {
-    font: 2.5vw/1 "LotteMartHappy";
-  }
-  #banner1 a .banner1_inner h3 {
-    font: 1.5vw/6 "LotteMartDream";
-  }
-  #banner1 a .banner1_inner h4 {
-    font: 1.5vw/9 "LotteMartDream";
-  }
-  #banner1 a .banner1_inner h5 {
-    font: bold 1.5vw/14 "LotteMartDream";
-  }
-}
-@media screen and (max-width: 400px) {
-  #banner1 a {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-  }
-  #banner1 a .banner1_inner {
-    width: 80%;
-    top: 24%;
-    left: 9%;
-  }
-  #banner1 a .banner1_inner h2 {
-    font: 4vw/1 "LotteMartHappy";
-  }
-  #banner1 a .banner1_inner h3 {
-    font: 2.5vw/6 "LotteMartDream";
-  }
-  #banner1 a .banner1_inner h4 {
-    font: 2.5vw/9 "LotteMartDream";
-  }
-  #banner1 a .banner1_inner h5 {
-    font: bold 2.5vw/13 "LotteMartDream";
-  }
-}
 #brand {
   width: 100%;
   height: 700px;
@@ -1234,7 +943,6 @@ a {
 #banner2 {
   width: 100%;
   background-color: #fff;
-  margin: 2% 0% 5% 0%;
   overflow: hidden;
 }
 #banner2 a {
@@ -1272,84 +980,6 @@ a {
   position: absolute;
 }
 
-@media screen and (max-width: 1179px) {
-  #banner2 a {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-  }
-  #banner2 a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #banner2 a .banner2_inner {
-    width: 40%;
-    align-items: center;
-    text-align: left;
-    top: 32%;
-    left: 22%;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner h2 {
-    font: 2.5vw/1 "LotteMartHappy";
-    color: #555;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner p {
-    font: 1.5vw/7 "LotteMartDream";
-    color: #555;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner h3 {
-    font: bold 1.5vw/12 "LotteMartDream";
-    color: #555;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 400px) {
-  #banner2 {
-    width: 100%;
-    background-color: #fff;
-    margin: 2% 0% 5% 0%;
-    overflow: hidden;
-  }
-  #banner2 a {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-  }
-  #banner2 a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #banner2 a .banner2_inner {
-    width: 40%;
-    align-items: center;
-    text-align: left;
-    top: 25%;
-    left: 22%;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner h2 {
-    font: 4vw/1 "LotteMartHappy";
-    color: #555;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner p {
-    font: 2.5vw/6 "LotteMartDream";
-    color: #555;
-    position: absolute;
-  }
-  #banner2 a .banner2_inner h3 {
-    font: bold 2.5vw/10 "LotteMartDream";
-    color: #555;
-    position: absolute;
-  }
-}
 #story {
   width: 100%;
 }
@@ -1422,79 +1052,6 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 1179px) {
-  #story {
-    width: 100%;
-  }
-  #story .story_txt {
-    text-align: center;
-  }
-  #story .story_txt h2 {
-    font: 2.5vw/1.5 "LotteMartHappy";
-    color: #555;
-  }
-  #story .story_txt p {
-    font: 1.5vw/2 "LotteMartDream";
-    color: #555;
-  }
-  #story #story_inner {
-    width: 100%;
-    height: 100%;
-  }
-  #story #story_inner nav {
-    width: 100%;
-    gap: 2%;
-    display: flex;
-    justify-content: center;
-  }
-  #story #story_inner nav a {
-    font: 18px/3 "LotteMartDream";
-    color: #999;
-  }
-  #story #story_inner nav a.on {
-    color: orange;
-  }
-  #story #story_inner #story_content {
-    width: 70vw;
-    margin: 0 auto;
-    display: flex;
-  }
-  #story #story_inner #story_content section {
-    width: 100%;
-    display: none;
-    margin: 0 auto;
-  }
-  #story #story_inner #story_content section > h6 {
-    display: none;
-  }
-  #story #story_inner #story_content section article {
-    width: 30%;
-  }
-  #story #story_inner #story_content section article h6 {
-    display: none;
-  }
-  #story #story_inner #story_content section article .inner {
-    width: 100%;
-    transform: scale(0.5);
-    transition: 1s;
-    opacity: 0;
-  }
-  #story #story_inner #story_content section article .inner a img {
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  #story #story_inner #story_content section.on {
-    display: flex;
-    justify-content: space-between;
-  }
-  #story #story_inner #story_content section.active article {
-    margin: 0 auto;
-  }
-  #story #story_inner #story_content section.active article .inner {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 #sub_common {
   width: 1920px;
 }
