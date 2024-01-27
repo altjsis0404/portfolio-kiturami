@@ -402,8 +402,8 @@ a {
     display: inline-block;
   }
   #baro .baro_inner_bottom .wrap .leftbaro a {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro a img {
     width: 50px;
@@ -420,8 +420,8 @@ a {
     display: inline-block;
   }
   #baro .baro_inner_bottom .wrap .centerbaro a {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro a img {
     width: 50px;
@@ -438,8 +438,8 @@ a {
     display: inline-block;
   }
   #baro .baro_inner_bottom .wrap .rightbaro a {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro a img {
     width: 50px;
@@ -459,7 +459,7 @@ a {
   }
   #baro .baro_inner_top {
     width: 100%;
-    height: 90px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,11 +469,12 @@ a {
     width: 90%;
   }
   #baro .baro_inner_top .txt h2 {
-    font: 28px/1.5 "LotteMartHappy";
+    font: 25px/1.5 "LotteMartHappy";
     color: #555;
   }
   #baro .baro_inner_top .txt p {
-    display: none;
+    font: 11px/1.5 "LotteMartDream";
+    color: #555;
   }
   #baro .baro_inner_bottom .wrap {
     width: 260px;
@@ -498,8 +499,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro > div a img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro > div a h3 {
     font: 14px/2 "LotteMartDream";
@@ -523,8 +524,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro > div a img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro > div a h3 {
     font: 14px/2 "LotteMartDream";
@@ -548,8 +549,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro > div a img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro > div a h3 {
     font: 14px/2 "LotteMartDream";
