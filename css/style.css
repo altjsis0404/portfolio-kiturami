@@ -476,7 +476,7 @@ a {
     width: 100%;
   }
   #baro .baro_inner_top .txt h2 {
-    font: 30px/1.5 "LotteMartHappy";
+    font: 25px/1.5 "LotteMartHappy";
     color: #555;
   }
   #baro .baro_inner_top .txt p {
@@ -499,8 +499,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro a img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro a h3 {
     font: 14px/2 "LotteMartDream";
@@ -517,8 +517,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro a img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro a h3 {
     font: 14px/2 "LotteMartDream";
@@ -535,8 +535,8 @@ a {
     height: 100px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro a img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro a h3 {
     font: 14px/2 "LotteMartDream";
