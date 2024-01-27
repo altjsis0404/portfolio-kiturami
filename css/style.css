@@ -466,14 +466,14 @@ a {
     text-align: center;
   }
   #baro .baro_inner_top .txt {
-    width: 90%;
+    width: 95%;
   }
   #baro .baro_inner_top .txt h2 {
     font: 25px/1.5 "LotteMartHappy";
     color: #555;
   }
   #baro .baro_inner_top .txt p {
-    font: 11px/1.5 "LotteMartDream";
+    font: 12px/1.5 "LotteMartDream";
     color: #555;
   }
   #baro .baro_inner_bottom .wrap {
@@ -503,7 +503,7 @@ a {
     height: 30px;
   }
   #baro .baro_inner_bottom .wrap .leftbaro > div a h3 {
-    font: 14px/2 "LotteMartDream";
+    font: 15px/2 "LotteMartDream";
     color: #555;
   }
   #baro .baro_inner_bottom .wrap .leftbaro > div a h3:hover {
@@ -528,7 +528,7 @@ a {
     height: 30px;
   }
   #baro .baro_inner_bottom .wrap .centerbaro > div a h3 {
-    font: 14px/2 "LotteMartDream";
+    font: 15px/2 "LotteMartDream";
     color: #555;
   }
   #baro .baro_inner_bottom .wrap .centerbaro > div a h3:hover {
@@ -553,7 +553,7 @@ a {
     height: 30px;
   }
   #baro .baro_inner_bottom .wrap .rightbaro > div a h3 {
-    font: 14px/2 "LotteMartDream";
+    font: 15px/2 "LotteMartDream";
     color: #555;
   }
   #baro .baro_inner_bottom .wrap .rightbaro > div a h3:hover {
