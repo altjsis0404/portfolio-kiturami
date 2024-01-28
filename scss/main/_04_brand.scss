@@ -962,7 +962,7 @@
 
 			.txt {
 				width: 100%;
-				height: 60px;
+				height: 70px;
 				text-align: center;
 
 				h2 {
@@ -1006,6 +1006,7 @@
 							transition: 1.5s;
 							position: absolute;
 							text-align: center;
+							padding: 5%;
 
 							h2 {
 								font: 15px/2 'LotteMartHappy';
@@ -1430,12 +1431,12 @@
 @media screen and (max-width: 400px) {
 	#brand {
 		width: 100%;
-		height: 370px;
+		height: 330px;
 		position: relative;
 
 		.brand_inner_top {
 			width: 100%;
-			height: 290px;
+			height: 260px;
 			transition: all 1s;
 
 			.txt {
@@ -1478,12 +1479,13 @@
 
 						.wrap {
 							width: 100%;
-							height: 25%;
+							height: 28%;
 							background-color: #e8dfd8;
 							right: 0;
 							transition: 1.5s;
 							position: absolute;
 							text-align: center;
+							padding: 2%;
 
 							h2 {
 								font: 12px/2 'LotteMartHappy';
