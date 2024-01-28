@@ -5,6 +5,7 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	margin-bottom: 60px;
 
 	a {
 		width: 1500px;
@@ -28,12 +29,12 @@
 
 
 			h2 {
-				font: 35px/2 'LotteMartHappy';
+				font: 32px/1 'LotteMartHappy';
 				color: #555;
 			}
 
 			p {
-				font: 18px/1.5 'LotteMartDream';
+				font: 16px/2.5 'LotteMartDream';
 				color: #555;
 			}
 
@@ -109,6 +110,7 @@
 		display: flex;
 		align-items: center;
 		overflow: hidden;
+		margin-bottom: 40px;
 
 		a {
 			width: 100%;
