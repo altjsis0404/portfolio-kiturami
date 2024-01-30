@@ -2961,30 +2961,34 @@ a {
   justify-content: center;
   align-items: center;
 }
-.sub_AS #member .sub_AS_title {
-  font: 20px/1 "LotteMartDream";
+.sub_AS #member fieldset {
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
+}
+.sub_AS #member fieldset .sub_AS_title {
+  font: 18px/1 "LotteMartHappy";
   color: #555;
   text-align: center;
   padding: 0px 20px 0px 20px;
 }
-.sub_AS #member table {
+.sub_AS #member fieldset table {
   width: 1000px;
   text-align: left;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin: 10px 0px;
 }
-.sub_AS #member table tbody tr {
+.sub_AS #member fieldset table tbody tr {
   align-items: center;
   display: flex;
 }
-.sub_AS #member table tbody tr th,
-.sub_AS #member table tbody tr td {
+.sub_AS #member fieldset table tbody tr th,
+.sub_AS #member fieldset table tbody tr td {
   height: 70px;
   border-bottom: 1px solid #ddd;
   padding: 10px 25px;
 }
-.sub_AS #member table tbody tr th {
+.sub_AS #member fieldset table tbody tr th {
   width: 20%;
   font: 15px/1 "LotteMartDream";
   color: #555;
@@ -2992,7 +2996,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.sub_AS #member table tbody tr td {
+.sub_AS #member fieldset table tbody tr td {
   width: 90%;
   height: 70px;
   font: 14px/1.5 "LotteMartDream";
@@ -3000,7 +3004,7 @@ a {
   position: relative;
   border-left: 1px solid #fff;
 }
-.sub_AS #member table tbody tr td #toggleBtn {
+.sub_AS #member fieldset table tbody tr td #toggleBtn {
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -3013,138 +3017,139 @@ a {
   justify-content: center;
   align-items: center;
 }
-.sub_AS #member table tbody tr td #toggleBtn::before {
+.sub_AS #member fieldset table tbody tr td #toggleBtn::before {
   content: "\f06e";
   font-family: fontAwesome;
 }
-.sub_AS #member table tbody tr td #toggleBtn.hide::before {
+.sub_AS #member fieldset table tbody tr td #toggleBtn.hide::before {
   content: "\f070";
   font-family: fontAwesome;
 }
-.sub_AS #member table tbody tr td input[type=text],
-.sub_AS #member table tbody tr td input[type=tel],
-.sub_AS #member table tbody tr td input[type=password],
-.sub_AS #member table tbody tr td input[type=datetime-local],
-.sub_AS #member table tbody tr td input[type=checkbox],
-.sub_AS #member table tbody tr td select {
+.sub_AS #member fieldset table tbody tr td input[type=text],
+.sub_AS #member fieldset table tbody tr td input[type=tel],
+.sub_AS #member fieldset table tbody tr td input[type=password],
+.sub_AS #member fieldset table tbody tr td input[type=datetime-local],
+.sub_AS #member fieldset table tbody tr td input[type=checkbox],
+.sub_AS #member fieldset table tbody tr td select {
   width: 95%;
   background-color: rgba(0, 0, 0, 0.03);
   padding: 10px;
   border: 1px solid #fff;
 }
-.sub_AS #member table tbody tr td textarea {
+.sub_AS #member fieldset table tbody tr td textarea {
   width: 95%;
   height: 90%;
   background-color: rgba(0, 0, 0, 0.03);
-  border: 1px solid #000;
+  border: 1px solid #e8dfd8;
   padding: 10px;
   resize: none;
 }
-.sub_AS #member table tbody tr td input[type=submit] {
+.sub_AS #member fieldset table tbody tr td input[type=submit] {
   width: 120%;
   height: 40px;
   font: bold 16px/1.2 "LotteMartDream";
   color: #555;
   margin-left: -165px;
+  border: 1px solid #e8dfd8;
   cursor: pointer;
 }
-.sub_AS #member table tbody tr td p {
+.sub_AS #member fieldset table tbody tr td p {
   font: 11px/1 "LotteMartDream";
-  color: red;
+  color: orangered;
   margin-top: 5px;
 }
-.sub_AS #member table tbody tr.date_AS {
+.sub_AS #member fieldset table tbody tr.date_AS {
   height: 60px;
 }
-.sub_AS #member table tbody tr.date_AS th,
-.sub_AS #member table tbody tr.date_AS td {
+.sub_AS #member fieldset table tbody tr.date_AS th,
+.sub_AS #member fieldset table tbody tr.date_AS td {
   height: 100%;
 }
-.sub_AS #member table tbody tr.comments_AS {
+.sub_AS #member fieldset table tbody tr.comments_AS {
   height: 230px;
 }
-.sub_AS #member table tbody tr.comments_AS th,
-.sub_AS #member table tbody tr.comments_AS td {
+.sub_AS #member fieldset table tbody tr.comments_AS th,
+.sub_AS #member fieldset table tbody tr.comments_AS td {
   height: 100%;
 }
-.sub_AS #member table tbody tr.agree_AS {
+.sub_AS #member fieldset table tbody tr.agree_AS {
   height: 180px;
 }
-.sub_AS #member table tbody tr.agree_AS th,
-.sub_AS #member table tbody tr.agree_AS td {
+.sub_AS #member fieldset table tbody tr.agree_AS th,
+.sub_AS #member fieldset table tbody tr.agree_AS td {
   height: 100%;
 }
-.sub_AS #member table tbody tr.agree_AS td {
+.sub_AS #member fieldset table tbody tr.agree_AS td {
   display: flex;
   flex-direction: column;
 }
-.sub_AS #member table tbody tr.agree_AS td .agree_AS_inner {
+.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 6px;
 }
-.sub_AS #member table tbody tr.agree_AS td .agree_AS_inner input[type=checkbox] {
+.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner input[type=checkbox] {
   width: 12px;
   height: 12px;
 }
-.sub_AS #member table tbody tr.info1_AS {
+.sub_AS #member fieldset table tbody tr.info1_AS {
   width: 100%;
   height: 120px;
   padding: 0px 0px 0px 50px;
 }
-.sub_AS #member table tbody tr.info1_AS .th_none {
+.sub_AS #member fieldset table tbody tr.info1_AS .th_none {
   width: 0px;
   margin-left: -60px;
 }
-.sub_AS #member table tbody tr.info1_AS td > p {
+.sub_AS #member fieldset table tbody tr.info1_AS td > p {
   font: 14px/1.5 "LotteMartHappy";
   color: #555;
 }
-.sub_AS #member table tbody tr.info1_AS th,
-.sub_AS #member table tbody tr.info1_AS td {
+.sub_AS #member fieldset table tbody tr.info1_AS th,
+.sub_AS #member fieldset table tbody tr.info1_AS td {
   height: 100%;
 }
-.sub_AS #member table tbody tr.info1_AS th .point_AS,
-.sub_AS #member table tbody tr.info1_AS td .point_AS {
+.sub_AS #member fieldset table tbody tr.info1_AS th .point_AS,
+.sub_AS #member fieldset table tbody tr.info1_AS td .point_AS {
   color: orange;
 }
-.sub_AS #member table tbody tr.info2_AS {
+.sub_AS #member fieldset table tbody tr.info2_AS {
   width: 100%;
   height: 390px;
   padding: 0px 0px 0px 50px;
 }
-.sub_AS #member table tbody tr.info2_AS .th_none {
+.sub_AS #member fieldset table tbody tr.info2_AS .th_none {
   width: 0px;
   margin-left: -60px;
 }
-.sub_AS #member table tbody tr.info2_AS td > p {
+.sub_AS #member fieldset table tbody tr.info2_AS td > p {
   font: 14px/1.5 "LotteMartHappy";
   color: #555;
 }
-.sub_AS #member table tbody tr.info2_AS th,
-.sub_AS #member table tbody tr.info2_AS td {
+.sub_AS #member fieldset table tbody tr.info2_AS th,
+.sub_AS #member fieldset table tbody tr.info2_AS td {
   height: 100%;
 }
-.sub_AS #member table tbody tr.info2_AS th .point_AS,
-.sub_AS #member table tbody tr.info2_AS td .point_AS {
+.sub_AS #member fieldset table tbody tr.info2_AS th .point_AS,
+.sub_AS #member fieldset table tbody tr.info2_AS td .point_AS {
   color: orange;
 }
-.sub_AS #member table tbody tr.info2_AS th ul,
-.sub_AS #member table tbody tr.info2_AS th li,
-.sub_AS #member table tbody tr.info2_AS td ul,
-.sub_AS #member table tbody tr.info2_AS td li {
+.sub_AS #member fieldset table tbody tr.info2_AS th ul,
+.sub_AS #member fieldset table tbody tr.info2_AS th li,
+.sub_AS #member fieldset table tbody tr.info2_AS td ul,
+.sub_AS #member fieldset table tbody tr.info2_AS td li {
   list-style-type: circle;
 }
-.sub_AS #member table tbody.btn_AS {
+.sub_AS #member fieldset table tbody.btn_AS {
   height: 60px;
 }
-.sub_AS #member table tbody.btn_AS .th_none {
+.sub_AS #member fieldset table tbody.btn_AS .th_none {
   width: 0px;
 }
-.sub_AS #member table tbody.btn_AS th,
-.sub_AS #member table tbody.btn_AS td {
+.sub_AS #member fieldset table tbody.btn_AS th,
+.sub_AS #member fieldset table tbody.btn_AS td {
   height: 100%;
 }
 
@@ -3288,19 +3293,33 @@ a {
 
 .commpany_location {
   width: 1500px;
-  height: 75vh;
+  height: 90vh;
   margin: 0 auto;
   text-align: center;
 }
 .commpany_location .location_inner h2 {
-  font: 18px/2.5 "LotteMartHappy";
+  font: 18px/3 "LotteMartDream";
   color: #555;
   background-color: #e8dfd8;
+}
+.commpany_location .location_inner .location_inner_adress {
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 7% 2% 7%;
+}
+.commpany_location .location_inner .location_inner_adress h3 {
+  height: 90px;
+  font: 13px/1.8 "LotteMartDream";
+  color: #555;
+  text-align: left;
 }
 .commpany_location .location_inner #map {
   width: 100%;
   height: 500px;
-  border: 2px solid #e8dfd8;
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
   margin-bottom: 20px;
 }
 .commpany_location .location_inner::after {
@@ -3320,14 +3339,15 @@ a {
   height: 40px;
   font: 13px/40px "LotteMartDream";
   color: #111;
-  background-color: #e8dfd8;
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
   text-align: center;
   display: block;
 }
 .commpany_location .location_inner .traffic li.on a {
-  color: #fff;
-  background-color: orange;
-  border: none;
+  color: orange;
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
 }
 .commpany_location .location_inner .branch {
   float: right;
@@ -3341,14 +3361,15 @@ a {
   height: 40px;
   font: 13px/40px "LotteMartDream";
   color: #111;
-  background-color: #e8dfd8;
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
   text-align: center;
   display: block;
 }
 .commpany_location .location_inner .branch li.on a {
-  color: #fff;
-  background-color: orange;
-  border: none;
+  color: orange;
+  border: 1px solid #e8dfd8;
+  box-shadow: 2px 2px 10px #e8dfd8;
 }
 
 /*# sourceMappingURL=style.css.map */
