@@ -35,13 +35,11 @@
 				justify-content: space-between;
 				position: relative;
 
-
 				article {
 					width: 30%;
 					height: 430px;
 					border: 1px solid #e8dfd8;
 					border-radius: 10px;
-					// margin-top: 25px;
 					transition-duration: 1.5s;
 					transition-delay: 0s;
 					overflow: hidden;
@@ -91,16 +89,6 @@
 							position: relative;
 
 						}
-
-						i {
-							// font: 20px/1 'LotteMartDream';
-							// color: #000;
-							// top: 40px;
-							// right: 40px;
-							// position: absolute;
-						}
-
-
 
 						.desc {
 							width: 100%;
@@ -169,20 +157,12 @@
 							transform: translateX(-200px);
 							position: relative;
 						}
-
-						i {
-							// color: #555;
-							// transition: 0.5s;
-							// margin-right: -100px;
-							// opacity: 0;
-						}
 					}
 
 					.close {
 						font: bold 1vw/1 'LotteMartDream';
 						color: #555;
 						top: 10vh;
-						// right: -10vw;
 						transition: all 0.5s;
 						position: absolute;
 						cursor: pointer;
@@ -197,12 +177,10 @@
 					}
 
 					&:nth-of-type(2) {
-						// transform: translateX(90%) translateY(0%);
 						opacity: 0.5;
 					}
 
 					&:nth-of-type(3) {
-						// transform: translateX(198%) translateY(0%);
 						opacity: 1;
 
 						.txt h2::before {
@@ -216,9 +194,6 @@
 						.open {
 							width: 100%;
 							pointer-events: auto;
-							// transition-duration: 1s;
-							// z-index: 9999;
-							// background-color: #fff;
 
 							span {
 								transform: translateX(150px);
@@ -230,17 +205,10 @@
 								pointer-events: none;
 								opacity: 0;
 							}
-
-							// i {
-							// 	margin-right: 30px;
-							// 	transition: 0.5s 0.8s;
-							// 	opacity: 1;
-							// }
 						}
 					}
 
 					&:nth-of-type(4) {
-						// transform: translateX(306%) translateY(0%);
 						opacity: 0.5;
 					}
 
@@ -266,8 +234,6 @@
 						background-color: #e8dfd8;
 						text-align: left;
 						padding: 10px 20px 10px 20px;
-
-
 
 						h2 {
 							font: 20px/2 'LotteMartHappy';
@@ -352,17 +318,6 @@
 			gap: 20px;
 		}
 
-		&::before {
-			// width: 1px;
-			// height: 100%;
-			// background-color: #555;
-			// top: 50%;
-			// left: 50%;
-			// transform: translateY(-50%) rotate(-60deg);
-			// position: absolute;
-			// content: '';
-		}
-
 		.brand_prev {
 			background-color: #e8dfd8;
 			clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -388,87 +343,11 @@
 			position: relative;
 			cursor: pointer;
 
-
 			span {
 				font: 12px/1 'LotteMartDream';
 				color: #555;
 				transition: 0.5s;
 				display: inline-block;
-
-
-			}
-
-			&::before {
-				// width: 0%;
-				// height: 1px;
-				// background-color: #555;
-				// top: 50%;
-				// transition: 0.2s 0.2s;
-				// opacity: 1;
-				// position: absolute;
-				// content: '';
-			}
-
-			&::after {
-				width: 0px;
-				height: 1px;
-				background-color: #555;
-				top: 50%;
-				transition: 0.2s 0s;
-				position: absolute;
-				content: '';
-			}
-
-			&.brand_next {
-				text-align: left;
-
-				span {
-					font: 15px/1 'LotteMartHappy';
-					color: #999;
-					transform: translateY(-5px);
-				}
-
-				&::before {
-					left: 0;
-				}
-
-				&::after {
-					right: 0;
-					transform-origin: right center;
-					transform: rotate(40deg);
-				}
-			}
-
-			&.brand_prev {
-				text-align: right;
-
-				&.off {
-					right: 5vw;
-					opacity: 0;
-				}
-
-				span {
-					font: 15px/1 'LotteMartHappy';
-					color: #999;
-					transform: translateY(20px);
-
-				}
-			}
-		}
-
-		p:hover {
-
-			&.brand_next,
-			&.brand_prev {
-				&::before {
-					width: 100%;
-					transition: 0.2s;
-				}
-
-				&::after {
-					width: 40px;
-					transition: 0.2s 0.2s;
-				}
 			}
 		}
 	}
@@ -819,17 +698,6 @@
 				gap: 20px;
 			}
 
-			&::before {
-				// width: 1px;
-				// height: 100%;
-				// background-color: #555;
-				// top: 50%;
-				// left: 50%;
-				// transform: translateY(-50%) rotate(-60deg);
-				// position: absolute;
-				// content: '';
-			}
-
 			.brand_prev {
 				background-color: #e8dfd8;
 				clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -861,91 +729,6 @@
 					color: #555;
 					transition: 0.5s;
 					display: inline-block;
-
-
-				}
-
-				&::before {
-					// width: 0%;
-					// height: 1px;
-					// background-color: #555;
-					// top: 50%;
-					// transition: 0.2s 0.2s;
-					// opacity: 1;
-					// position: absolute;
-					// content: '';
-				}
-
-				&::after {
-					width: 0px;
-					height: 1px;
-					background-color: #555;
-					top: 50%;
-					transition: 0.2s 0s;
-					position: absolute;
-					content: '';
-				}
-
-				&.brand_next {
-					text-align: left;
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(-5px);
-					}
-
-					&::before {
-						left: 0;
-					}
-
-					&::after {
-						right: 0;
-						transform-origin: right center;
-						transform: rotate(40deg);
-					}
-				}
-
-				&.brand_prev {
-					text-align: right;
-
-					&.off {
-						right: 5vw;
-						opacity: 0;
-					}
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(20px);
-
-					}
-
-					&::before {
-						right: 0;
-					}
-
-					&::after {
-						left: 0;
-						transform-origin: left center;
-						transform: rotate(40deg);
-					}
-				}
-			}
-
-			p:hover {
-
-				&.brand_next,
-				&.brand_prev {
-					&::before {
-						width: 100%;
-						transition: 0.2s;
-					}
-
-					&::after {
-						width: 40px;
-						transition: 0.2s 0.2s;
-					}
 				}
 			}
 		}
@@ -995,7 +778,6 @@
 						height: 300px;
 						border: 1px solid #e8dfd8;
 						border-radius: 10px;
-						// margin-top: 25px;
 						overflow: hidden;
 						z-index: 1;
 						position: relative;
@@ -1044,22 +826,11 @@
 
 							}
 
-							i {
-								// font: 20px/1 'LotteMartDream';
-								// color: #000;
-								// top: 40px;
-								// right: 40px;
-								// position: absolute;
-							}
-
-
-
 							.desc {
 								width: 100%;
 								font: 0.8vw/1.3 'LotteMartDream';
 								color: #555;
 								top: 60%;
-								// left: 5vw;
 								transition: 0.5s;
 								position: absolute;
 								opacity: 0;
@@ -1121,13 +892,6 @@
 								transform: translateX(-200px);
 								position: relative;
 							}
-
-							i {
-								// color: #555;
-								// transition: 0.5s;
-								// margin-right: -100px;
-								// opacity: 0;
-							}
 						}
 
 						.close {
@@ -1149,12 +913,10 @@
 						}
 
 						&:nth-of-type(2) {
-							// transform: translateX(90%) translateY(0%);
 							opacity: 0.5;
 						}
 
 						&:nth-of-type(3) {
-							// transform: translateX(198%) translateY(0%);
 							opacity: 1;
 
 							.txt h2::before {
@@ -1168,9 +930,6 @@
 							.open {
 								width: 100%;
 								pointer-events: auto;
-								// transition-duration: 1s;
-								// z-index: 9999;
-								// background-color: #fff;
 
 								span {
 									transform: translateX(150px);
@@ -1182,17 +941,10 @@
 									pointer-events: none;
 									opacity: 0;
 								}
-
-								// i {
-								// 	margin-right: 30px;
-								// 	transition: 0.5s 0.8s;
-								// 	opacity: 1;
-								// }
 							}
 						}
 
 						&:nth-of-type(4) {
-							// transform: translateX(306%) translateY(0%);
 							opacity: 0.5;
 						}
 
@@ -1220,8 +972,6 @@
 
 							h2 {
 								font: 16px/1.8 'LotteMartHappy';
-								// top: 10%;
-								// left: 10%;
 								transition: 0.5s;
 							}
 
@@ -1236,8 +986,6 @@
 							.desc {
 								font: 13px/1.5 'LotteMartDream';
 								text-align: left;
-								// top: 25%;
-								// left: 10%;
 								transition: 1s 1s;
 								opacity: 1;
 							}
@@ -1297,17 +1045,6 @@
 				gap: 20px;
 			}
 
-			&::before {
-				// width: 1px;
-				// height: 100%;
-				// background-color: #555;
-				// top: 50%;
-				// left: 50%;
-				// transform: translateY(-50%) rotate(-60deg);
-				// position: absolute;
-				// content: '';
-			}
-
 			.brand_prev {
 				background-color: #e8dfd8;
 				clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -1339,91 +1076,6 @@
 					color: #555;
 					transition: 0.5s;
 					display: inline-block;
-
-
-				}
-
-				&::before {
-					// width: 0%;
-					// height: 1px;
-					// background-color: #555;
-					// top: 50%;
-					// transition: 0.2s 0.2s;
-					// opacity: 1;
-					// position: absolute;
-					// content: '';
-				}
-
-				&::after {
-					width: 0px;
-					height: 1px;
-					background-color: #555;
-					top: 50%;
-					transition: 0.2s 0s;
-					position: absolute;
-					content: '';
-				}
-
-				&.brand_next {
-					text-align: left;
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(-5px);
-					}
-
-					&::before {
-						left: 0;
-					}
-
-					&::after {
-						right: 0;
-						transform-origin: right center;
-						transform: rotate(40deg);
-					}
-				}
-
-				&.brand_prev {
-					text-align: right;
-
-					&.off {
-						right: 5vw;
-						opacity: 0;
-					}
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(20px);
-
-					}
-
-					&::before {
-						right: 0;
-					}
-
-					&::after {
-						left: 0;
-						transform-origin: left center;
-						transform: rotate(40deg);
-					}
-				}
-			}
-
-			p:hover {
-
-				&.brand_next,
-				&.brand_prev {
-					&::before {
-						width: 100%;
-						transition: 0.2s;
-					}
-
-					&::after {
-						width: 40px;
-						transition: 0.2s 0.2s;
-					}
 				}
 			}
 		}
@@ -1473,7 +1125,6 @@
 						height: 220px;
 						border: 1px solid #e8dfd8;
 						border-radius: 10px;
-						// margin-top: 25px;
 						overflow: hidden;
 						z-index: 1;
 						position: relative;
@@ -1487,10 +1138,10 @@
 							transition: 1.5s;
 							position: absolute;
 							text-align: center;
-							padding: 3% 2% 0% 2%;
+							padding: 4% 2% 0% 2%;
 
 							h2 {
-								font: 12px/1.5 'LotteMartHappy';
+								font: 12px/1.3 'LotteMartHappy';
 								color: #555;
 								transition: 0.5s;
 								position: relative;
@@ -1508,8 +1159,8 @@
 							}
 
 							strong {
-								display: none;
-								font: 12px/1 'LotteMartDream';
+								// display: none;
+								font: 10px/1.2 'LotteMartDream';
 								color: #555;
 								position: relative;
 
@@ -1517,28 +1168,16 @@
 
 							p {
 
-								font: 10px/1.7 'LotteMartDream';
+								font: 10px/1.2 'LotteMartDream';
 								color: #555;
 								position: relative;
-
 							}
-
-							i {
-								// font: 20px/1 'LotteMartDream';
-								// color: #000;
-								// top: 40px;
-								// right: 40px;
-								// position: absolute;
-							}
-
-
 
 							.desc {
 								width: 100%;
 								font: 11px/1.3 'LotteMartDream';
 								color: #555;
 								top: 60%;
-								// left: 5vw;
 								transition: 0.5s;
 								position: absolute;
 								opacity: 0;
@@ -1600,20 +1239,12 @@
 								transform: translateX(-200px);
 								position: relative;
 							}
-
-							i {
-								// color: #555;
-								// transition: 0.5s;
-								// margin-right: -100px;
-								// opacity: 0;
-							}
 						}
 
 						.close {
 							font: bold 1vw/1 'LotteMartDream';
 							color: #555;
 							top: 10vh;
-							// right: -10vw;
 							transition: all 0.5s;
 							position: absolute;
 							cursor: pointer;
@@ -1628,12 +1259,10 @@
 						}
 
 						&:nth-of-type(2) {
-							// transform: translateX(90%) translateY(0%);
 							opacity: 0.5;
 						}
 
 						&:nth-of-type(3) {
-							// transform: translateX(198%) translateY(0%);
 							opacity: 1;
 
 							.txt h2::before {
@@ -1647,9 +1276,6 @@
 							.open {
 								width: 100%;
 								pointer-events: auto;
-								// transition-duration: 1s;
-								// z-index: 9999;
-								// background-color: #fff;
 
 								span {
 									transform: translateX(150px);
@@ -1662,16 +1288,10 @@
 									opacity: 0;
 								}
 
-								// i {
-								// 	margin-right: 30px;
-								// 	transition: 0.5s 0.8s;
-								// 	opacity: 1;
-								// }
 							}
 						}
 
 						&:nth-of-type(4) {
-							// transform: translateX(306%) translateY(0%);
 							opacity: 0.5;
 						}
 
@@ -1679,13 +1299,12 @@
 							transform: translateX(360%) translateY(0%);
 							opacity: 0;
 							display: none;
-
 						}
 					}
 
 					article.on {
 						width: 100%;
-						height: 130px;
+						height: 230px;
 						z-index: 2;
 
 						.wrap {
@@ -1699,8 +1318,6 @@
 
 							h2 {
 								font: 12px/2 'LotteMartHappy';
-								// top: 10%;
-								// left: 10%;
 								transition: 0.5s;
 							}
 
@@ -1715,8 +1332,6 @@
 							.desc {
 								font: 10px/1.5 'LotteMartDream';
 								text-align: left;
-								// top: 25%;
-								// left: 10%;
 								transition: 1s 1s;
 								opacity: 1;
 							}
@@ -1736,7 +1351,7 @@
 
 						.close {
 							font: 15px/1.3 'LotteMartDream';
-							bottom: 20%;
+							bottom: 0%;
 							right: 5%;
 							transform: translateX(-50%);
 							transform: translateY(80%);
@@ -1776,17 +1391,6 @@
 				gap: 20px;
 			}
 
-			&::before {
-				// width: 1px;
-				// height: 100%;
-				// background-color: #555;
-				// top: 50%;
-				// left: 50%;
-				// transform: translateY(-50%) rotate(-60deg);
-				// position: absolute;
-				// content: '';
-			}
-
 			.brand_prev {
 				background-color: #e8dfd8;
 				clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -1812,97 +1416,11 @@
 				position: relative;
 				cursor: pointer;
 
-
 				span {
 					font: 12px/1 'LotteMartDream';
 					color: #555;
 					transition: 0.5s;
 					display: inline-block;
-
-
-				}
-
-				&::before {
-					// width: 0%;
-					// height: 1px;
-					// background-color: #555;
-					// top: 50%;
-					// transition: 0.2s 0.2s;
-					// opacity: 1;
-					// position: absolute;
-					// content: '';
-				}
-
-				&::after {
-					width: 0px;
-					height: 1px;
-					background-color: #555;
-					top: 50%;
-					transition: 0.2s 0s;
-					position: absolute;
-					content: '';
-				}
-
-				&.brand_next {
-					text-align: left;
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(-5px);
-					}
-
-					&::before {
-						left: 0;
-					}
-
-					&::after {
-						right: 0;
-						transform-origin: right center;
-						transform: rotate(40deg);
-					}
-				}
-
-				&.brand_prev {
-					text-align: right;
-
-					&.off {
-						right: 5vw;
-						opacity: 0;
-					}
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(20px);
-
-					}
-
-					&::before {
-						right: 0;
-					}
-
-					&::after {
-						left: 0;
-						transform-origin: left center;
-						transform: rotate(40deg);
-					}
-				}
-			}
-
-			p:hover {
-
-				&.brand_next,
-				&.brand_prev {
-					&::before {
-						width: 100%;
-						transition: 0.2s;
-					}
-
-					&::after {
-						width: 40px;
-						transition: 0.2s 0.2s;
-					}
 				}
 			}
 		}
@@ -1917,7 +1435,7 @@
 
 		.brand_inner_top {
 			width: 100%;
-			height: 260px;
+			height: 250px;
 			transition: all 1s;
 
 			.txt {
@@ -1952,7 +1470,6 @@
 						height: 180px;
 						border: 1px solid #e8dfd8;
 						border-radius: 10px;
-						// margin-top: 25px;
 						overflow: hidden;
 						z-index: 1;
 						position: relative;
@@ -1966,7 +1483,7 @@
 							transition: 1.5s;
 							position: absolute;
 							text-align: center;
-							padding: 3% 2% 0% 2%;
+							padding: 4% 2% 0% 2%;
 
 							h2 {
 								font: 11px/1.3 'LotteMartHappy';
@@ -1995,29 +1512,16 @@
 							}
 
 							p {
-								// display: none;
 								font: 8px/1.2 'LotteMartDream';
 								color: #555;
 								position: relative;
-
 							}
-
-							i {
-								// font: 20px/1 'LotteMartDream';
-								// color: #000;
-								// top: 40px;
-								// right: 40px;
-								// position: absolute;
-							}
-
-
 
 							.desc {
 								width: 100%;
 								font: 0.8vw/1.3 'LotteMartDream';
 								color: #555;
 								top: 60%;
-								// left: 5vw;
 								transition: 0.5s;
 								position: absolute;
 								opacity: 0;
@@ -2079,20 +1583,12 @@
 								transform: translateX(-200px);
 								position: relative;
 							}
-
-							i {
-								// color: #555;
-								// transition: 0.5s;
-								// margin-right: -100px;
-								// opacity: 0;
-							}
 						}
 
 						.close {
 							font: bold 1vw/1 'LotteMartDream';
 							color: #555;
 							top: 10vh;
-							// right: -10vw;
 							transition: all 0.5s;
 							position: absolute;
 							cursor: pointer;
@@ -2107,12 +1603,10 @@
 						}
 
 						&:nth-of-type(2) {
-							// transform: translateX(90%) translateY(0%);
 							opacity: 0.5;
 						}
 
 						&:nth-of-type(3) {
-							// transform: translateX(198%) translateY(0%);
 							opacity: 1;
 
 							.txt h2::before {
@@ -2126,9 +1620,6 @@
 							.open {
 								width: 100%;
 								pointer-events: auto;
-								// transition-duration: 1s;
-								// z-index: 9999;
-								// background-color: #fff;
 
 								span {
 									transform: translateX(150px);
@@ -2140,17 +1631,10 @@
 									pointer-events: none;
 									opacity: 0;
 								}
-
-								// i {
-								// 	margin-right: 30px;
-								// 	transition: 0.5s 0.8s;
-								// 	opacity: 1;
-								// }
 							}
 						}
 
 						&:nth-of-type(4) {
-							// transform: translateX(306%) translateY(0%);
 							opacity: 0.5;
 						}
 
@@ -2178,8 +1662,6 @@
 
 							h2 {
 								font: 12px/2 'LotteMartHappy';
-								// top: 10%;
-								// left: 10%;
 								transition: 0.5s;
 							}
 
@@ -2194,8 +1676,6 @@
 							.desc {
 								font: 10px/1.5 'LotteMartDream';
 								text-align: left;
-								// top: 25%;
-								// left: 10%;
 								transition: 1s 1s;
 								opacity: 1;
 							}
@@ -2255,17 +1735,6 @@
 				gap: 20px;
 			}
 
-			&::before {
-				// width: 1px;
-				// height: 100%;
-				// background-color: #555;
-				// top: 50%;
-				// left: 50%;
-				// transform: translateY(-50%) rotate(-60deg);
-				// position: absolute;
-				// content: '';
-			}
-
 			.brand_prev {
 				background-color: #e8dfd8;
 				clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -2291,97 +1760,11 @@
 				position: relative;
 				cursor: pointer;
 
-
 				span {
 					font: 12px/1 'LotteMartDream';
 					color: #555;
 					transition: 0.5s;
 					display: inline-block;
-
-
-				}
-
-				&::before {
-					// width: 0%;
-					// height: 1px;
-					// background-color: #555;
-					// top: 50%;
-					// transition: 0.2s 0.2s;
-					// opacity: 1;
-					// position: absolute;
-					// content: '';
-				}
-
-				&::after {
-					width: 0px;
-					height: 1px;
-					background-color: #555;
-					top: 50%;
-					transition: 0.2s 0s;
-					position: absolute;
-					content: '';
-				}
-
-				&.brand_next {
-					text-align: left;
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(-5px);
-					}
-
-					&::before {
-						left: 0;
-					}
-
-					&::after {
-						right: 0;
-						transform-origin: right center;
-						transform: rotate(40deg);
-					}
-				}
-
-				&.brand_prev {
-					text-align: right;
-
-					&.off {
-						right: 5vw;
-						opacity: 0;
-					}
-
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #999;
-						transform: translateY(20px);
-
-					}
-
-					&::before {
-						right: 0;
-					}
-
-					&::after {
-						left: 0;
-						transform-origin: left center;
-						transform: rotate(40deg);
-					}
-				}
-			}
-
-			p:hover {
-
-				&.brand_next,
-				&.brand_prev {
-					&::before {
-						width: 100%;
-						transition: 0.2s;
-					}
-
-					&::after {
-						width: 40px;
-						transition: 0.2s 0.2s;
-					}
 				}
 			}
 		}
