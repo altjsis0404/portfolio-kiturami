@@ -91,6 +91,96 @@
   font: 13px/1.2 "LotteMartHappy";
   color: #555;
 }
+#header .header_inner_top .header_btnCall {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+#header .header_inner_top .header_btnCall::before {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+  content: "";
+  display: block;
+}
+#header .header_inner_top .header_btnCall::after {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+  content: "";
+  display: block;
+}
+#header .header_inner_top .header_btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  transition: 0.5s;
+  text-indent: -9999999px;
+}
+#header .header_inner_top .header_btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header .header_inner_top .header_btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header .header_inner_top .header_btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header .header_inner_top .header_gnb_side {
+  width: 270px;
+  height: 100vh;
+  background-color: #e8dfd8;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 10;
+  transition: all 0.5s;
+  display: none;
+}
+#header .header_inner_top .header_gnb_side.on {
+  left: 0px;
+}
+#header .header_inner_top .header_gnb_side h2 a img {
+  width: 200px;
+  padding: 20px 0px 20px 0px;
+}
+#header .header_inner_top .header_gnb_side #header_gnb_mo {
+  width: 200px;
+  height: 600px;
+  margin: 0 auto;
+}
+#header .header_inner_top .header_gnb_side #header_gnb_mo li table tr td {
+  padding: 20px 0px 0px 0px;
+}
+#header .header_inner_top .header_gnb_side #header_gnb_mo li table tr td select {
+  width: 200px;
+  height: 50px;
+  font: 20px/1.2 "LotteMartDream";
+  color: #555;
+  background-color: #e8dfd8;
+  border: none;
+  border-bottom: 1px solid #284934;
+}
 
 @media screen and (max-width: 800px) {
   #header .header_inner_top #header_gnb {
