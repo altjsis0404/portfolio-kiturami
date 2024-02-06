@@ -150,7 +150,7 @@
 #header .header_inner_top .header_gnb_side {
   width: 230px;
   height: 100vh;
-  background-color: #e8dfd8;
+  background-color: #f0ebe8;
   position: fixed;
   top: 0;
   left: -230px;
@@ -178,7 +178,7 @@
   height: 40px;
   font: 16px/1.2 "LotteMartDream";
   color: #555;
-  background-color: #e8dfd8;
+  background-color: #f0ebe8;
   border: none;
   border-bottom: 1px solid #284934;
 }
@@ -338,7 +338,7 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data a {
-    font: 15px/1 "LotteMartDream";
+    font: 13px/1 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address {
@@ -349,7 +349,7 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address span {
-    font: 15px/1.5 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address p {
@@ -428,7 +428,7 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data a {
-    font: 15px/1 "LotteMartDream";
+    font: 13px/1 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address {
@@ -439,7 +439,7 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address span {
-    font: 15px/1.5 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address p {
@@ -541,26 +541,26 @@
     display: none;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data img {
-    width: 13px;
+    width: 12px;
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data a {
-    font: 15px/1.5 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address {
     position: relative;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address a img {
-    width: 13px;
+    width: 11px;
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address span {
-    font: 15px/1.5 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address p {
-    font: 15px/1.5 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
     margin-left: 18px;
   }
@@ -664,11 +664,11 @@
     display: none;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data img {
-    width: 10px;
+    width: 9px;
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data a {
-    font: 12px/1 "LotteMartDream";
+    font: 11px/1 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address {
@@ -679,11 +679,11 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address span {
-    font: 12px/1.5 "LotteMartDream";
+    font: 11px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address p {
-    font: 12px/1.5 "LotteMartDream";
+    font: 11px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .familysite {

@@ -169,7 +169,8 @@
 		.header_gnb_side {
 			width: 230px;
 			height: 100vh;
-			background-color: #e8dfd8;
+			background-color: #f0ebe8;
+			// border: 1px solid #999;
 			position: fixed;
 			top: 0;
 			left: -230px;
@@ -209,7 +210,7 @@
 									height: 40px;
 									font: 16px/1.2 'LotteMartDream';
 									color: #555;
-									background-color: #e8dfd8;
+									background-color: #f0ebe8;
 									border: none;
 									border-bottom: 1px solid #284934;
 								}
@@ -224,15 +225,7 @@
 
 @media screen and (max-width: 800px) {
 	#header {
-		&.on {}
-
 		.header_inner_top {
-			h1 {
-				a {
-					img {}
-				}
-			}
-
 			#header_gnb {
 				display: none;
 			}
