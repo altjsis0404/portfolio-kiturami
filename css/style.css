@@ -148,7 +148,7 @@
   opacity: 0;
 }
 #header .header_inner_top .header_gnb_side {
-  width: 230px;
+  width: 30vw;
   height: 100vh;
   background-color: #f0ebe8;
   position: fixed;
@@ -162,11 +162,11 @@
   left: 0px;
 }
 #header .header_inner_top .header_gnb_side h2 a img {
-  width: 170px;
+  width: 25vw;
   padding: 20px 0px 0px 0px;
 }
 #header .header_inner_top .header_gnb_side #header_gnb_mo {
-  width: 180px;
+  width: 25vw;
   height: 600px;
   margin: 0 auto;
 }
@@ -174,8 +174,8 @@
   padding: 20px 0px 0px 0px;
 }
 #header .header_inner_top .header_gnb_side #header_gnb_mo li table tr td select {
-  width: 180px;
-  height: 40px;
+  width: 25vw;
+  height: 5vh;
   font: 16px/1.2 "LotteMartDream";
   color: #555;
   background-color: #f0ebe8;
