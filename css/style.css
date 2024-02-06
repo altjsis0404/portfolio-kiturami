@@ -228,7 +228,7 @@
   color: #555;
 }
 #footer .footer_inner .footer_top .footer_inner_left .data .data_inner a {
-  margin-left: 18px;
+  margin-left: 2%;
 }
 #footer .footer_inner .footer_top .footer_inner_left .address {
   position: relative;
@@ -666,11 +666,11 @@
   #footer .footer_inner .footer_top .footer_inner_left h6 {
     display: none;
   }
-  #footer .footer_inner .footer_top .footer_inner_left .data div img {
+  #footer .footer_inner .footer_top .footer_inner_left .data img {
     width: 9px;
     opacity: 0.5;
   }
-  #footer .footer_inner .footer_top .footer_inner_left .data div a {
+  #footer .footer_inner .footer_top .footer_inner_left .data a {
     font: 10px/1 "LotteMartDream";
     color: #555;
   }
