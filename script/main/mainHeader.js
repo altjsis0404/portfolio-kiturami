@@ -15,3 +15,24 @@ header_lis.forEach((el, index) => {
 });
 
 
+const header_btnCall = document.querySelector('.header_btnCall');
+const header_gnb_side = document.querySelector('.header_gnb_side');
+
+header_btnCall.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	let isOn = header_btnCall.classList.contains('on');
+
+	if (isOn) {
+		header_btnCall.classList.remove('on');
+	} else {
+		header_btnCall.classList.add('on');
+	}
+
+	let isOnMo = header_gnb_side.classList.contains('on');
+	if (isOnMo) {
+		header_gnb_side.classList.remove('on');
+	} else {
+		header_gnb_side.classList.add('on');
+	}
+});
