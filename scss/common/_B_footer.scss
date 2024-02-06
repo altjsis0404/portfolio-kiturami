@@ -34,6 +34,12 @@
 						font: 15px/1 'LotteMartDream';
 						color: #555;
 					}
+
+					.data_inner {
+						a {
+							margin-left: 18px;
+						}
+					}
 				}
 
 				.address {
@@ -52,7 +58,7 @@
 					}
 
 					p {
-						font: 13px/1.5 'LotteMartDream';
+						font: 15px/1.5 'LotteMartDream';
 						color: #555;
 						margin-left: 18px;
 					}
@@ -642,15 +648,18 @@
 					}
 
 					.data {
-						img {
-							width: 9px;
-							opacity: 0.5;
+						div {
+							img {
+								width: 9px;
+								opacity: 0.5;
+							}
+
+							a {
+								font: 11px/1 'LotteMartDream';
+								color: #555;
+							}
 						}
 
-						a {
-							font: 11px/1 'LotteMartDream';
-							color: #555;
-						}
 					}
 
 					.address {
