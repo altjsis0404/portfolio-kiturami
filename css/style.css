@@ -671,7 +671,7 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .data div a {
-    font: 11px/1 "LotteMartDream";
+    font: 10px/1 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address {
@@ -682,11 +682,11 @@
     opacity: 0.5;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address span {
-    font: 11px/1.5 "LotteMartDream";
+    font: 10px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .address p {
-    font: 11px/1.5 "LotteMartDream";
+    font: 10px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_left .familysite {
