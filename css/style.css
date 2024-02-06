@@ -652,7 +652,7 @@
     width: 90%;
   }
   #footer .footer_inner .footer_top {
-    width: 71%;
+    width: 72%;
     height: 22vh;
     margin: 0 auto;
     display: flex;
@@ -694,7 +694,7 @@
     right: 0;
   }
   #footer .footer_inner .footer_top .footer_inner_left .familysite select {
-    font: 13px/1 "LotteMartDream";
+    font: 13px/1.5 "LotteMartDream";
     color: #555;
   }
   #footer .footer_inner .footer_top .footer_inner_center {
