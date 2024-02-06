@@ -2418,7 +2418,7 @@ a {
   }
   #brand .brand_inner_top div .brand_inner_mid article .wrap {
     width: 100%;
-    height: 28%;
+    height: 23%;
     background-color: #e8dfd8;
     right: 0;
     transition: 1.5s;
@@ -2431,7 +2431,7 @@ a {
     color: #555;
     transition: 0.5s;
     position: relative;
-    padding: 1%;
+    padding: 3% 2%;
     z-index: 2;
   }
   #brand .brand_inner_top div .brand_inner_mid article .wrap h2::before {
@@ -2466,7 +2466,7 @@ a {
   }
   #brand .brand_inner_top div .brand_inner_mid article .pic {
     width: 100%;
-    height: 60%;
+    height: 65%;
     background-color: #fff;
     bottom: 5%;
     left: 0;
