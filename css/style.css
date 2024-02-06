@@ -228,7 +228,7 @@
   color: #555;
 }
 #footer .footer_inner .footer_top .footer_inner_left .data .data_inner a {
-  margin-left: 2%;
+  margin-left: 1.5%;
 }
 #footer .footer_inner .footer_top .footer_inner_left .address {
   position: relative;
@@ -2427,10 +2427,11 @@ a {
     padding: 4% 2% 0% 2%;
   }
   #brand .brand_inner_top div .brand_inner_mid article .wrap h2 {
-    font: 11px/1.3 "LotteMartHappy";
+    font: 12px/1.3 "LotteMartHappy";
     color: #555;
     transition: 0.5s;
     position: relative;
+    padding: 1%;
     z-index: 2;
   }
   #brand .brand_inner_top div .brand_inner_mid article .wrap h2::before {
@@ -2449,6 +2450,7 @@ a {
     position: relative;
   }
   #brand .brand_inner_top div .brand_inner_mid article .wrap p {
+    display: none;
     font: 8px/1.2 "LotteMartDream";
     color: #555;
     position: relative;
