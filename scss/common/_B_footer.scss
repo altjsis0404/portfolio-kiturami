@@ -632,7 +632,7 @@
 			width: 90%;
 
 			.footer_top {
-				width: 72%;
+				width: 80%;
 				height: 22vh;
 				margin: 0 auto;
 				display: flex;
@@ -656,6 +656,12 @@
 						a {
 							font: 10px/1 'LotteMartDream';
 							color: #555;
+						}
+
+						.data_inner {
+							a {
+								margin-left: 2%;
+							}
 						}
 					}
 
