@@ -167,12 +167,12 @@
 		}
 
 		.header_gnb_side {
-			width: 270px;
+			width: 230px;
 			height: 100vh;
 			background-color: #e8dfd8;
 			position: fixed;
 			top: 0;
-			left: -270px;
+			left: -230px;
 			z-index: 10;
 			transition: all 0.5s;
 			display: none;
@@ -185,15 +185,15 @@
 
 				a {
 					img {
-						width: 200px;
-						padding: 20px 0px 20px 0px;
+						width: 170px;
+						padding: 20px 0px 0px 0px;
 
 					}
 				}
 			}
 
 			#header_gnb_mo {
-				width: 200px;
+				width: 180px;
 				height: 600px;
 				margin: 0 auto;
 
@@ -205,9 +205,9 @@
 								padding: 20px 0px 0px 0px;
 
 								select {
-									width: 200px;
+									width: 180px;
 									height: 40px;
-									font: 18px/1.2 'LotteMartDream';
+									font: 16px/1.2 'LotteMartDream';
 									color: #555;
 									background-color: #e8dfd8;
 									border: none;
