@@ -171,7 +171,7 @@
   margin: 0 auto;
 }
 #header .header_inner_top .header_gnb_side #header_gnb_mo li table tr td {
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 #header .header_inner_top .header_gnb_side #header_gnb_mo li table tr td select {
   width: 25vw;
@@ -184,8 +184,11 @@
 }
 
 @media screen and (max-width: 800px) {
-  #header .header_inner_top h1 {
-    display: none;
+  #header .header_inner_top {
+    justify-content: left;
+  }
+  #header .header_inner_top h1 a img {
+    margin-left: 25px;
   }
   #header .header_inner_top #header_gnb {
     display: none;
