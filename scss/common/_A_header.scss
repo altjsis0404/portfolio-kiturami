@@ -1,10 +1,6 @@
 #header {
 	width: 100%;
 
-	&.on {
-		width: 100%;
-	}
-
 	.header_inner_top {
 		width: 100%;
 		height: 60px;
@@ -167,13 +163,12 @@
 		}
 
 		.header_gnb_side {
-			width: 35vw;
+			width: 40vw;
 			height: 100vh;
 			background-color: #f0ebe8;
-			// border: 1px solid #999;
 			position: fixed;
 			top: 0;
-			left: -230px;
+			left: -300px;
 			z-index: 10;
 			transition: all 0.5s;
 			display: none;
@@ -229,10 +224,14 @@
 			justify-content: left;
 
 			h1 {
+
 				a {
+
 					img {
 						margin-left: 25px;
 					}
+
+
 				}
 			}
 
@@ -252,5 +251,18 @@
 }
 
 @media screen and (max-width: 400px) {
-	// 내용없음
+	#header {
+		.header_inner_top {
+			justify-content: left;
+
+			h1 {
+				a {
+					img {
+						margin-left: 25px;
+					}
+
+				}
+			}
+		}
+	}
 }
