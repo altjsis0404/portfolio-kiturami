@@ -16,7 +16,6 @@
 
 		h1 {
 			a {
-
 				img {
 					width: 160px;
 				}
@@ -228,7 +227,7 @@
 				a {
 
 					img {
-						margin-left: 25px;
+						margin-left: 20px;
 					}
 
 
@@ -258,11 +257,15 @@
 			h1 {
 				a {
 					img {
-						margin-left: 25px;
+						position: relative;
+						width: 120px;
+						top: 15%;
 					}
+
 
 				}
 			}
+
 		}
 	}
 }

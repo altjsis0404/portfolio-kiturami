@@ -185,7 +185,7 @@
     justify-content: left;
   }
   #header .header_inner_top h1 a img {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   #header .header_inner_top #header_gnb {
     display: none;
@@ -202,7 +202,9 @@
     justify-content: left;
   }
   #header .header_inner_top h1 a img {
-    margin-left: 25px;
+    position: relative;
+    width: 120px;
+    top: 15%;
   }
 }
 #footer {
