@@ -37,7 +37,7 @@
 
 				>a {
 					font: 18px/60px 'LotteMartHappy';
-					color: #284934;
+					color: #333;
 					text-align: center;
 					opacity: 0.8;
 
@@ -186,7 +186,7 @@
 
 				a {
 					img {
-						width: 30vw;
+						width: 25vw;
 						padding: 20px 0px 0px 0px;
 
 					}
@@ -194,7 +194,7 @@
 			}
 
 			#header_gnb_mo {
-				width: 30vw;
+				width: 25vw;
 				height: 600px;
 				margin: 0 auto;
 
@@ -206,7 +206,7 @@
 								padding: 20px 0px 0px 0px;
 
 								select {
-									width: 30vw;
+									width: 25vw;
 									height: 40px;
 									font: 15px/1.2 'LotteMartDream';
 									color: #555;
@@ -226,6 +226,10 @@
 @media screen and (max-width: 800px) {
 	#header {
 		.header_inner_top {
+			h1 {
+				display: none;
+			}
+
 			#header_gnb {
 				display: none;
 			}
