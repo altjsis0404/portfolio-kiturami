@@ -1,37 +1,93 @@
 #sub_common {
-	width: 1920px;
+	width: 100%;
+	position: relative;
+	top: 60px;
 
 	.sub_common_top {
 		width: 100%;
-		height: 300px;
+		height: 250px;
 		background-color: #e8dfd8;
-		padding: 100px 0px 100px 210px;
 
-		position: relative;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
 
-		.sub_common_top_inner {
-			width: 100%;
+		.sub_common_top_box {
+			width: 1500px;
+			height: 200px;
+			margin: 0px 30px 0px 30px;
+			display: flex;
+			justify-content: space-between;
 
-			p {
-				font: 15px/1.2 'LotteMartDream';
-				color: #555;
+			.sub_common_top_inner {
+				width: 60%;
+
+				p {
+					font: 15px/1.2 'LotteMartDream';
+					color: #555;
+				}
+
+				h2 {
+					font: 25px/1 'LotteMartHappy';
+					color: #555;
+				}
+
+				h3 {
+					font: 16px/1.5 'LotteMartDream';
+					color: #555;
+				}
 			}
-			h2 {
-				font: 25px/1 'LotteMartHappy';
-				color: #555;
-			}
-			h3 {
-				font: 16px/1.5 'LotteMartDream';
-				color: #555;
-			}
-		}
-		figure {
-			img {
-				width: 300px;
-				margin: 0px 210px 0px 0px;
+
+			figure {
+				width: 40%;
+				text-align: right;
+
+				img {
+					height: 100%;
+					display: inline-block;
+				}
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 800px) {
+	#sub_common {
+
+		.sub_common_top {
+
+
+			.sub_common_top_box {
+
+				.sub_common_top_inner {
+					width: 100%;
+
+
+					p {
+						font: 14px/1.2 'LotteMartDream';
+						color: #555;
+					}
+
+					h2 {
+						font: 23px/1 'LotteMartHappy';
+						color: #555;
+					}
+
+					h3 {
+						font: 15px/1.5 'LotteMartDream';
+						color: #555;
+					}
+				}
+
+				figure {
+					display: none;
+
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	// 내용없음
 }

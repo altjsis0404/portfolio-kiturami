@@ -18,7 +18,8 @@
     <!-- header -->
     <header id="header">
         <div class="header_inner_top">
-            <h1><a href="../index.html"><img src="../img/main_header/header_logo.jpg" alt="귀뚜라미 로고 이미지"></a></h1>
+            <h1 class="header_inner_top_logo"><a href="../index.html"><img src="../img/main_header/header_logo.jpg"
+                        alt="귀뚜라미 로고 이미지"></a></h1>
             <ul id="header_gnb">
                 <li>
                     <a href="../html/01_product_01_gasboiler.html">제품소개</a>
@@ -111,10 +112,10 @@
                     <div class="header_sub">
                         <div>
                             <ul>
-                                <li class="header_inner"><a href="#">뉴스</a></li>
+                                <li class="header_inner"><a href="../html/03_PRcenter_02_CF.html">CF</a></li>
                             </ul>
                             <ul>
-                                <li class="header_inner"><a href="../html/03_PRcenter_02_CF.html">CF</a></li>
+                                <li class="header_inner"><a href="#">뉴스</a></li>
                             </ul>
                             <ul>
                                 <li class="header_inner"><a href="#">CSR</a></li>
@@ -130,9 +131,10 @@
                     <div class="header_sub">
                         <div>
                             <ul>
-                                <li class="header_inner"><a href="../html/04_company_01_introduce.html">기업소개</a></li>
-                                <li><a href="#">기업비전</a></li>
-                                <li><a href="#">기업연혁</a></li>
+                                <li class="header_inner"><a href="../html/04_company_01_introduce.html">기업비전</a></li>
+                            </ul>
+                            <ul>
+                                <li class="header_inner"><a href="#">기업연혁</a></li>
                             </ul>
                             <ul>
                                 <li class="header_inner"><a href="#">CI소개</a></li>
@@ -143,32 +145,109 @@
                             <ul>
                                 <li class="header_inner"><a href="#">채용안내</a></li>
                             </ul>
-                            <ul>
-                                <li class="header_inner"><a href="#">찾아오시는 길</a></li>
-                            </ul>
                         </div>
                     </div>
                 </li>
             </ul>
+            <a href="#" class="header_btnCall">
+                <span>버튼</span>
+            </a>
+            <nav class="header_gnb_side">
+                <h2><a href="../index.html"><img src="../img/main_header/header_logo_mo.png" alt="귀뚜라미 로고 이미지"></a></h2>
+                <ul id="header_gnb_mo">
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="product_mo" id="product_mo">
+                                        <option value="" selected disabled hidden>제품소개</option>
+                                        <option value="../html/01_product_01_gasboiler.html">보일러</option>
+                                        <option value="냉/난방기">냉/난방기</option>
+                                        <option value="실내온도조절기">실내온도조절기</option>
+                                        <option value="난방매트">난방매트</option>
+                                        <option value="온수기">온수기</option>
+                                        <option value="기타">기타</option>
+                                        <option value="청정/환기시스템">청정/환기시스템</option>
+                                        <option value="시스템각방">시스템각방</option>
+                                        <option value="케스케이드시스템">케스케이드시스템</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="service_mo" id="service_mo">
+                                        <option value="" selected disabled hidden>고객서비스</option>
+                                        <option value="../html/02_service_01_AS.html">A/S 안내</option>
+                                        <option value="구매 가이드">구매 가이드</option>
+                                        <option value="제품 사용 가이드">제품 사용 가이드</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="PRcenter_mo" id="PRcenter_mo">
+                                        <option value="" selected disabled hidden>홍보센터</option>
+                                        <option value="../html/03_PRcenter_02_CF.html">CF</option>
+                                        <option value="NEWS">NEWS</option>
+                                        <option value="CSR">CSR</option>
+                                        <option value="EVENT">EVENT</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="company_mo" id="company_mo">
+                                        <option value="" selected disabled hidden>회사소개</option>
+                                        <option value="../html/04_company_01_introduce.html">기업소개</option>
+                                        <option value="기업연혁">기업연혁</option>
+                                        <option value="CI소개">CI소개</option>
+                                        <option value="국내외 지사">국내외 지사</option>
+                                        <option value="채용안내">채용안내</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- sub inner-->
+    <!-- sub common-->
     <section id="sub_common">
         <div class="sub_common_top">
-            <div class="sub_common_top_inner">
-                <p>홈 / 제품소개 /가스보일러</p>
-                <br>
-                <h2>가스보일러</h2>
-                <br>
-                <h3>필요한 제품을 클릭하시면 보다 자세한 정보를 확인하실수 있습니다.</h3>
+            <div class="sub_common_top_box">
+                <div class="sub_common_top_inner">
+                    <p>홈 / 제품소개 /가스보일러</p>
+                    <br>
+                    <h2>가스보일러</h2>
+                    <br>
+                    <h3>필요한 제품을 클릭하시면 보다 자세한 정보를 확인하실수 있습니다.</h3>
 
-            </div>
-            <figure>
-                <img src="../img/sub_common/mascot.png" alt="">
-            </figure>
+                </div>
+                <figure>
+                    <img src="../img/sub_common/mascot.png" alt="">
+                </figure>
+            </div class="">
         </div>
     </section>
+
+
+    <!-- sub inner-->
     <section class="sub_gasboiler_bottom">
         <h6>sub_gasboiler_bottom</h6>
         <div class="sub_gasboiler_bottom_inner_01">
@@ -372,16 +451,17 @@
                     <div class="data">
                         <img src="../img/main_footer/footer_info1_logo.png" alt="중요내용 느낌표 로고 이미지">
                         <a href="#">개인정보처리방침</a>
-                        <a href="#">이용약관</a>
-                        <a href="#">위치기반서비스이용약관</a>
-                        <a href="#">이메일무단수집거부</a>
-                        <a href="#">사이트맵</a>
+                        <span class="data_inner">
+                            <a href="#">이용약관</a>
+                            <a href="#">위치기반서비스이용약관</a>
+                            <a href="#">이메일무단수집거부</a>
+                            <a href="#">사이트맵</a>
+                        </span class="data_inner">
                     </div>
                     <div class="address">
                         <a href="../html/04_company_01_introduce.html"><img
                                 src="../img/main_footer/footer_info2_logo.png" alt="주소 아이콘 위치 로고"></a>
                         <span>경상북도 청도군 청도읍 월곡 2일 34</span>
-                        <p>귀뚜라미보일러 서비스센터 1588-9000</p>
                         <p>Copyright ⓒ 2015 KITURAMI All Rights Reserved.</p>
                     </div>
                     <div class="familysite">
