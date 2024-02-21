@@ -1,80 +1,86 @@
 .sub_gasboiler_bottom {
 	width: 100%;
-	margin: 0 auto;
-	align-items: center;
-	text-align: center;
+	margin-bottom: 60px;
+	position: relative;
 
 
 	h6 {
 		display: none;
 	}
 
-	.sub_gasboiler_bottom_inner_01,
-	.sub_gasboiler_bottom_inner_02,
-	.sub_gasboiler_bottom_inner_03 {
-		width: 1500px;
-		display: flex;
-		justify-content: space-between;
-		margin: 3% 0% 3% 0%;
+	.sub_gasboiler_bottom_box {
+		width: 100%;
+		margin: 0 auto;
+		align-items: center;
 
+		position: relative;
 
-		article {
-			width: 500px;
+		.sub_gasboiler_bottom_inner_01,
+		.sub_gasboiler_bottom_inner_02,
+		.sub_gasboiler_bottom_inner_03 {
+			max-width: 1500px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			align-items: center;
+			text-align: center;
 			border-bottom: 2px solid #e8dfd8;
 
+			article {
+				margin-top: 60px;
 
-			ul {
-				li {
-					.sub_gasboiler_bottom_img {
-						img {
-							width: 200px;
+				ul {
+					li {
+						div {
+							.sub_gasboiler_bottom_img {
+								width: 300px;
+								height: 300px;
+								position: relative;
+
+
+								img {
+									height: 100%;
+								}
+
+								&:hover {
+									background-color: rgb(255, 221, 161);
+									transition: 0.5s;
+									border-radius: 50% 50%;
+									box-shadow: 1px 1px 15px #e8dfd8;
+									overflow: hidden;
+									cursor: pointer;
+								}
+
+
+							}
 						}
-					}
 
-					.open {
-						width: 300px;
-						height: 300px;
-						background-color: #fff;
-						margin: 0 auto;
-						margin-top: -300px;
-						transition: 0.5s;
-						overflow: hidden;
-						opacity: 0;
-						cursor: pointer;
+						.sub_gasboiler_bottom_text {
+							width: 300px;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
 
-						&:hover {
-							transition: 0.5s;
-							border: 1px solid #999;
-							border-radius: 50%;
-							box-shadow: 1px 1px 15px #e8dfd8;
-							overflow: hidden;
-							opacity: 0.6;
+
+							span {
+								font: 15px/1 'LotteMartHappy';
+								color: #777;
+							}
+
+							h3 {
+								font: 18px/1.5 'LotteMartHappy';
+								color: #555;
+							}
+
+							h4 {
+								font: 12px/1.2 'LotteMartDream';
+								color: #999;
+								margin-bottom: 50px;
+							}
+
 						}
 
-						>span {
-							font: 20px/1 'LotteMartDream';
-							color: #999;
-							text-align: center;
-							text-shadow: 1px 1px 5px #e8dfd8;
-							top: 50%;
-							position: relative;
-						}
-					}
 
-					span {
-						font: 15px/1 'LotteMartHappy';
-						color: #777;
-					}
-
-					h3 {
-						font: 18px/1.5 'LotteMartHappy';
-						color: #555;
-					}
-
-					h4 {
-						font: 12px/1.2 'LotteMartDream';
-						color: #999;
-						margin-bottom: 50px;
 					}
 				}
 			}
@@ -82,4 +88,5 @@
 	}
 }
 
-@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 1200px) {}
