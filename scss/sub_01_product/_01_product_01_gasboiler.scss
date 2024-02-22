@@ -3,7 +3,6 @@
 	margin-bottom: 60px;
 	position: relative;
 
-
 	h6 {
 		display: none;
 	}
@@ -12,7 +11,6 @@
 		width: 100%;
 		margin: 0 auto;
 		align-items: center;
-
 		position: relative;
 
 		.sub_gasboiler_bottom_inner_01,
@@ -26,61 +24,76 @@
 			text-align: center;
 			border-bottom: 2px solid #e8dfd8;
 
-			article {
-				margin-top: 60px;
+			.sub_gasboiler_con_01_A,
+			.sub_gasboiler_con_01_B,
+			.sub_gasboiler_con_02_A,
+			.sub_gasboiler_con_02_B,
+			.sub_gasboiler_con_03_A,
+			.sub_gasboiler_con_03_B {
+				width: 50%;
+				display: flex;
+				justify-content: space-between;
 
-				ul {
-					li {
-						div {
-							.sub_gasboiler_bottom_img {
+				article {
+					width: 100%;
+					margin-top: 60px;
+
+
+					ul {
+						li {
+							div {
+								.sub_gasboiler_bottom_img {
+									width: 300px;
+									height: 300px;
+									position: relative;
+									margin: 0 auto;
+									align-items: center;
+
+									img {
+										height: 100%;
+									}
+
+									&:hover {
+										background-color: rgb(255, 221, 161);
+										transition: 0.5s;
+										border-radius: 50% 50%;
+										box-shadow: 1px 1px 15px #e8dfd8;
+										overflow: hidden;
+										cursor: pointer;
+									}
+
+
+								}
+							}
+
+							.sub_gasboiler_bottom_text {
 								width: 300px;
-								height: 300px;
-								position: relative;
+								display: flex;
+								flex-direction: column;
+								margin: 0 auto;
+								align-items: center;
 
 
-								img {
-									height: 100%;
+								span {
+									font: 15px/1 'LotteMartHappy';
+									color: #777;
 								}
 
-								&:hover {
-									background-color: rgb(255, 221, 161);
-									transition: 0.5s;
-									border-radius: 50% 50%;
-									box-shadow: 1px 1px 15px #e8dfd8;
-									overflow: hidden;
-									cursor: pointer;
+								h3 {
+									font: 18px/1.5 'LotteMartHappy';
+									color: #555;
 								}
 
+								h4 {
+									font: 12px/1.2 'LotteMartDream';
+									color: #999;
+									margin-bottom: 50px;
+								}
 
 							}
-						}
 
-						.sub_gasboiler_bottom_text {
-							width: 300px;
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-
-
-							span {
-								font: 15px/1 'LotteMartHappy';
-								color: #777;
-							}
-
-							h3 {
-								font: 18px/1.5 'LotteMartHappy';
-								color: #555;
-							}
-
-							h4 {
-								font: 12px/1.2 'LotteMartDream';
-								color: #999;
-								margin-bottom: 50px;
-							}
 
 						}
-
-
 					}
 				}
 			}
@@ -89,4 +102,323 @@
 }
 
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+	.sub_gasboiler_bottom {
+		width: 100%;
+		margin-bottom: 60px;
+		position: relative;
+
+		h6 {
+			display: none;
+		}
+
+		.sub_gasboiler_bottom_box {
+			width: 100%;
+			margin: 0 auto;
+			align-items: center;
+			position: relative;
+
+			.sub_gasboiler_bottom_inner_01,
+			.sub_gasboiler_bottom_inner_02,
+			.sub_gasboiler_bottom_inner_03 {
+				max-width: 1500px;
+				display: block;
+				justify-content: space-between;
+				margin: 0 auto;
+				align-items: center;
+				text-align: center;
+				border-bottom: 2px solid #e8dfd8;
+
+
+				.sub_gasboiler_con_01_A,
+				.sub_gasboiler_con_01_B,
+				.sub_gasboiler_con_02_A,
+				.sub_gasboiler_con_02_B,
+				.sub_gasboiler_con_03_A,
+				.sub_gasboiler_con_03_B {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					padding: 0px 50px;
+
+					article {
+						width: 100%;
+						margin-top: 60px;
+
+						ul {
+							li {
+								div {
+									.sub_gasboiler_bottom_img {
+										width: 300px;
+										height: 300px;
+										position: relative;
+										margin: 0 auto;
+										align-items: center;
+
+										img {
+											height: 100%;
+										}
+
+										&:hover {
+											background-color: rgb(255, 221, 161);
+											transition: 0.5s;
+											border-radius: 50% 50%;
+											box-shadow: 1px 1px 15px #e8dfd8;
+											overflow: hidden;
+											cursor: pointer;
+										}
+
+
+									}
+								}
+
+								.sub_gasboiler_bottom_text {
+									width: 300px;
+									display: flex;
+									flex-direction: column;
+									margin: 0 auto;
+									align-items: center;
+
+
+									span {
+										font: 15px/1 'LotteMartHappy';
+										color: #777;
+									}
+
+									h3 {
+										font: 18px/1.5 'LotteMartHappy';
+										color: #555;
+									}
+
+									h4 {
+										font: 12px/1.2 'LotteMartDream';
+										color: #999;
+										margin-bottom: 50px;
+									}
+
+								}
+
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.sub_gasboiler_bottom {
+		width: 100%;
+		margin-bottom: 60px;
+		position: relative;
+
+		h6 {
+			display: none;
+		}
+
+		.sub_gasboiler_bottom_box {
+			width: 100%;
+			margin: 0 auto;
+			align-items: center;
+			position: relative;
+
+			.sub_gasboiler_bottom_inner_01,
+			.sub_gasboiler_bottom_inner_02,
+			.sub_gasboiler_bottom_inner_03 {
+				max-width: 1500px;
+				display: block;
+				justify-content: space-between;
+				margin: 0 auto;
+				align-items: center;
+				text-align: center;
+				border-bottom: 2px solid #e8dfd8;
+
+
+				.sub_gasboiler_con_01_A,
+				.sub_gasboiler_con_01_B,
+				.sub_gasboiler_con_02_A,
+				.sub_gasboiler_con_02_B,
+				.sub_gasboiler_con_03_A,
+				.sub_gasboiler_con_03_B {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					padding: 0px 30px;
+
+					article {
+						width: 100%;
+						margin-top: 60px;
+
+
+						ul {
+							li {
+								div {
+									.sub_gasboiler_bottom_img {
+										width: 220px;
+										height: 220px;
+										position: relative;
+										margin: 0 auto;
+										align-items: center;
+
+										img {
+											height: 100%;
+										}
+
+										&:hover {
+											background-color: rgb(255, 221, 161);
+											transition: 0.5s;
+											border-radius: 50% 50%;
+											box-shadow: 1px 1px 15px #e8dfd8;
+											overflow: hidden;
+											cursor: pointer;
+										}
+
+
+									}
+								}
+
+								.sub_gasboiler_bottom_text {
+									width: 220px;
+									display: flex;
+									flex-direction: column;
+									margin: 0 auto;
+									align-items: center;
+
+
+									span {
+										font: 13px/1 'LotteMartHappy';
+										color: #777;
+									}
+
+									h3 {
+										font: 15px/1.5 'LotteMartHappy';
+										color: #555;
+									}
+
+									h4 {
+										font: 12px/1.2 'LotteMartDream';
+										color: #999;
+										margin-bottom: 50px;
+									}
+
+								}
+
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sub_gasboiler_bottom {
+		width: 100%;
+		margin-bottom: 60px;
+		position: relative;
+
+		h6 {
+			display: none;
+		}
+
+		.sub_gasboiler_bottom_box {
+			width: 100%;
+			margin: 0 auto;
+			align-items: center;
+			position: relative;
+
+			.sub_gasboiler_bottom_inner_01,
+			.sub_gasboiler_bottom_inner_02,
+			.sub_gasboiler_bottom_inner_03 {
+				max-width: 1500px;
+				display: block;
+				justify-content: space-between;
+				margin: 0 auto;
+				align-items: center;
+				text-align: center;
+				border-bottom: none;
+
+
+				.sub_gasboiler_con_01_A,
+				.sub_gasboiler_con_01_B,
+				.sub_gasboiler_con_02_A,
+				.sub_gasboiler_con_02_B,
+				.sub_gasboiler_con_03_A,
+				.sub_gasboiler_con_03_B {
+					width: 100%;
+					display: block;
+					justify-content: space-between;
+					padding: 0px 30px;
+
+					article {
+						width: 100%;
+						margin-top: 60px;
+						border-bottom: 2px solid #e8dfd8;
+
+
+						ul {
+							li {
+								div {
+									.sub_gasboiler_bottom_img {
+										width: 220px;
+										height: 220px;
+										position: relative;
+										margin: 0 auto;
+										align-items: center;
+
+										img {
+											height: 100%;
+										}
+
+										&:hover {
+											background-color: rgb(255, 221, 161);
+											transition: 0.5s;
+											border-radius: 50% 50%;
+											box-shadow: 1px 1px 15px #e8dfd8;
+											overflow: hidden;
+											cursor: pointer;
+										}
+
+
+									}
+								}
+
+								.sub_gasboiler_bottom_text {
+									width: 220px;
+									display: flex;
+									flex-direction: column;
+									margin: 0 auto;
+									align-items: center;
+
+
+									span {
+										font: 13px/1 'LotteMartHappy';
+										color: #777;
+									}
+
+									h3 {
+										font: 15px/1.5 'LotteMartHappy';
+										color: #555;
+									}
+
+									h4 {
+										font: 12px/1.2 'LotteMartDream';
+										color: #999;
+										margin-bottom: 50px;
+									}
+
+								}
+
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
