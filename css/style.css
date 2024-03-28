@@ -150,7 +150,7 @@
   background-color: #f0ebe8;
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -400px;
   z-index: 10;
   transition: all 0.5s;
   display: none;
@@ -4016,7 +4016,7 @@ a {
 }
 .sub_AS {
   width: 100%;
-  margin: 5% 0% 5% 0%;
+  margin: 5vw 0vw;
 }
 .sub_AS h6 {
   display: none;
@@ -4029,6 +4029,7 @@ a {
 .sub_AS #member fieldset {
   border: 1px solid #e8dfd8;
   box-shadow: 2px 2px 10px #e8dfd8;
+  padding: 1%;
 }
 .sub_AS #member fieldset .sub_AS_title {
   font: 18px/1 "LotteMartHappy";
@@ -4037,15 +4038,16 @@ a {
   padding: 0px 20px 0px 20px;
 }
 .sub_AS #member fieldset table {
-  width: 1000px;
+  width: 100%;
   text-align: left;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin: 10px 0px;
 }
 .sub_AS #member fieldset table tbody tr {
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sub_AS #member fieldset table tbody tr th,
 .sub_AS #member fieldset table tbody tr td {
@@ -4053,21 +4055,35 @@ a {
   border-bottom: 1px solid #ddd;
   padding: 10px 25px;
 }
+.sub_AS #member fieldset table tbody tr th:last-child,
+.sub_AS #member fieldset table tbody tr td:last-child {
+  flex: 1;
+}
 .sub_AS #member fieldset table tbody tr th {
   width: 20%;
   font: 15px/1 "LotteMartDream";
   color: #555;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
+.sub_AS #member fieldset table tbody tr th input[type=submit] {
+  width: 100%;
+  height: 40px;
+  font: bold 16px/1.2 "LotteMartDream";
+  color: #555;
+  border: 1px solid #e8dfd8;
+  cursor: pointer;
+}
 .sub_AS #member fieldset table tbody tr td {
-  width: 90%;
-  height: 70px;
+  width: 80%;
   font: 14px/1.5 "LotteMartDream";
   color: #555;
   position: relative;
   border-left: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sub_AS #member fieldset table tbody tr td #toggleBtn {
   width: 34px;
@@ -4096,27 +4112,18 @@ a {
 .sub_AS #member fieldset table tbody tr td input[type=datetime-local],
 .sub_AS #member fieldset table tbody tr td input[type=checkbox],
 .sub_AS #member fieldset table tbody tr td select {
-  width: 95%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.03);
   padding: 10px;
   border: 1px solid #fff;
 }
 .sub_AS #member fieldset table tbody tr td textarea {
-  width: 95%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.03);
   border: 1px solid #e8dfd8;
   padding: 10px;
   resize: none;
-}
-.sub_AS #member fieldset table tbody tr td input[type=submit] {
-  width: 120%;
-  height: 40px;
-  font: bold 16px/1.2 "LotteMartDream";
-  color: #555;
-  margin-left: -165px;
-  border: 1px solid #e8dfd8;
-  cursor: pointer;
 }
 .sub_AS #member fieldset table tbody tr td p {
   font: 11px/1 "LotteMartDream";
@@ -4138,7 +4145,7 @@ a {
   height: 100%;
 }
 .sub_AS #member fieldset table tbody tr.agree_AS {
-  height: 180px;
+  height: 200px;
 }
 .sub_AS #member fieldset table tbody tr.agree_AS th,
 .sub_AS #member fieldset table tbody tr.agree_AS td {
@@ -4148,29 +4155,27 @@ a {
   display: flex;
   flex-direction: column;
 }
-.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner {
+.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 6px;
 }
-.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner input[type=checkbox] {
+.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 input[type=checkbox] {
   width: 12px;
   height: 12px;
 }
+.sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_02 {
+  align-self: flex-start;
+}
 .sub_AS #member fieldset table tbody tr.info1_AS {
   width: 100%;
-  height: 120px;
-  padding: 0px 0px 0px 50px;
+  height: 180px;
 }
-.sub_AS #member fieldset table tbody tr.info1_AS .th_none {
-  width: 0px;
-  margin-left: -60px;
-}
-.sub_AS #member fieldset table tbody tr.info1_AS td > p {
-  font: 14px/1.5 "LotteMartHappy";
-  color: #555;
+.sub_AS #member fieldset table tbody tr.info1_AS td > span {
+  margin-right: auto;
+  padding-left: 2.5%;
 }
 .sub_AS #member fieldset table tbody tr.info1_AS th,
 .sub_AS #member fieldset table tbody tr.info1_AS td {
@@ -4182,16 +4187,13 @@ a {
 }
 .sub_AS #member fieldset table tbody tr.info2_AS {
   width: 100%;
-  height: 390px;
-  padding: 0px 0px 0px 50px;
+  height: 400px;
 }
-.sub_AS #member fieldset table tbody tr.info2_AS .th_none {
-  width: 0px;
-  margin-left: -60px;
-}
-.sub_AS #member fieldset table tbody tr.info2_AS td > p {
-  font: 14px/1.5 "LotteMartHappy";
-  color: #555;
+.sub_AS #member fieldset table tbody tr.info2_AS td {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 4.5%;
 }
 .sub_AS #member fieldset table tbody tr.info2_AS th,
 .sub_AS #member fieldset table tbody tr.info2_AS td {
@@ -4207,16 +4209,6 @@ a {
 .sub_AS #member fieldset table tbody tr.info2_AS td li {
   list-style-type: circle;
 }
-.sub_AS #member fieldset table tbody.btn_AS {
-  height: 60px;
-}
-.sub_AS #member fieldset table tbody.btn_AS .th_none {
-  width: 0px;
-}
-.sub_AS #member fieldset table tbody.btn_AS th,
-.sub_AS #member fieldset table tbody.btn_AS td {
-  height: 100%;
-}
 
 .ui-datepicker-trigger {
   cursor: pointer;
@@ -4226,6 +4218,595 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .sub_AS {
+    width: 100%;
+    margin: 8vw 0vw;
+  }
+  .sub_AS h6 {
+    display: none;
+  }
+  .sub_AS #member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset {
+    border: 1px solid #e8dfd8;
+    box-shadow: 2px 2px 10px #e8dfd8;
+    padding: 1%;
+  }
+  .sub_AS #member fieldset .sub_AS_title {
+    font: 18px/1 "LotteMartHappy";
+    color: #555;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+  }
+  .sub_AS #member fieldset table {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+  }
+  .sub_AS #member fieldset table tbody tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th,
+  .sub_AS #member fieldset table tbody tr td {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 25px;
+  }
+  .sub_AS #member fieldset table tbody tr th:last-child,
+  .sub_AS #member fieldset table tbody tr td:last-child {
+    flex: 1;
+  }
+  .sub_AS #member fieldset table tbody tr th {
+    width: 20%;
+    font: 15px/1 "LotteMartDream";
+    color: #555;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th input[type=submit] {
+    width: 100%;
+    height: 40px;
+    font: bold 16px/1.2 "LotteMartDream";
+    color: #555;
+    border: 1px solid #e8dfd8;
+    cursor: pointer;
+  }
+  .sub_AS #member fieldset table tbody tr td {
+    width: 80%;
+    font: 14px/1.5 "LotteMartDream";
+    color: #555;
+    position: relative;
+    border-left: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn::before {
+    content: "\f06e";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn.hide::before {
+    content: "\f070";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td input[type=text],
+  .sub_AS #member fieldset table tbody tr td input[type=tel],
+  .sub_AS #member fieldset table tbody tr td input[type=password],
+  .sub_AS #member fieldset table tbody tr td input[type=datetime-local],
+  .sub_AS #member fieldset table tbody tr td input[type=checkbox],
+  .sub_AS #member fieldset table tbody tr td select {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .sub_AS #member fieldset table tbody tr td textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid #e8dfd8;
+    padding: 10px;
+    resize: none;
+  }
+  .sub_AS #member fieldset table tbody tr td p {
+    font: 11px/1 "LotteMartDream";
+    color: orangered;
+    margin-top: 5px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS {
+    height: 60px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS th,
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS {
+    height: 230px;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS th,
+  .sub_AS #member fieldset table tbody tr.comments_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS {
+    height: 230px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS th,
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_02 {
+    align-self: flex-start;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS {
+    width: 100%;
+    height: 210px;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+    margin-right: auto;
+    padding-left: 2.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th,
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info1_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS {
+    width: 100%;
+    height: 470px;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th,
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info2_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS th li,
+  .sub_AS #member fieldset table tbody tr.info2_AS td ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS td li {
+    list-style-type: circle;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sub_AS {
+    width: 100%;
+  }
+  .sub_AS h6 {
+    display: none;
+  }
+  .sub_AS #member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset {
+    border: 1px solid #e8dfd8;
+    box-shadow: 2px 2px 10px #e8dfd8;
+    padding: 1%;
+  }
+  .sub_AS #member fieldset .sub_AS_title {
+    font: 16px/1 "LotteMartHappy";
+    color: #555;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+  }
+  .sub_AS #member fieldset table {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+  }
+  .sub_AS #member fieldset table tbody tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th,
+  .sub_AS #member fieldset table tbody tr td {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 25px;
+  }
+  .sub_AS #member fieldset table tbody tr th:last-child,
+  .sub_AS #member fieldset table tbody tr td:last-child {
+    flex: 1;
+  }
+  .sub_AS #member fieldset table tbody tr th {
+    width: 30%;
+    font: 12px/1 "LotteMartDream";
+    color: #555;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th input[type=submit] {
+    width: 100%;
+    height: 40px;
+    font: bold 14px/1.2 "LotteMartDream";
+    color: #555;
+    border: 1px solid #e8dfd8;
+    cursor: pointer;
+  }
+  .sub_AS #member fieldset table tbody tr td {
+    width: 80%;
+    font: 12px/1.5 "LotteMartDream";
+    color: #555;
+    position: relative;
+    border-left: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn::before {
+    content: "\f06e";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn.hide::before {
+    content: "\f070";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td input[type=text],
+  .sub_AS #member fieldset table tbody tr td input[type=tel],
+  .sub_AS #member fieldset table tbody tr td input[type=password],
+  .sub_AS #member fieldset table tbody tr td input[type=datetime-local],
+  .sub_AS #member fieldset table tbody tr td input[type=checkbox],
+  .sub_AS #member fieldset table tbody tr td select {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .sub_AS #member fieldset table tbody tr td textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid #e8dfd8;
+    padding: 10px;
+    resize: none;
+  }
+  .sub_AS #member fieldset table tbody tr td p {
+    font: 11px/1 "LotteMartDream";
+    color: orangered;
+    margin-top: 5px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS {
+    height: 60px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS th,
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS {
+    height: 230px;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS th,
+  .sub_AS #member fieldset table tbody tr.comments_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS {
+    height: 230px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS th,
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_02 {
+    align-self: flex-start;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS {
+    width: 100%;
+    height: 210px;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+    margin-right: auto;
+    padding-left: 2.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th,
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info1_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS {
+    width: 100%;
+    height: 470px;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th,
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info2_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS th li,
+  .sub_AS #member fieldset table tbody tr.info2_AS td ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS td li {
+    list-style-type: circle;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sub_AS {
+    width: 100%;
+  }
+  .sub_AS h6 {
+    display: none;
+  }
+  .sub_AS #member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset {
+    border: 1px solid #e8dfd8;
+    box-shadow: 2px 2px 10px #e8dfd8;
+    padding: 1%;
+  }
+  .sub_AS #member fieldset .sub_AS_title {
+    font: 16px/1 "LotteMartHappy";
+    color: #555;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+  }
+  .sub_AS #member fieldset table {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+  }
+  .sub_AS #member fieldset table tbody tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th,
+  .sub_AS #member fieldset table tbody tr td {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 25px;
+  }
+  .sub_AS #member fieldset table tbody tr th:last-child,
+  .sub_AS #member fieldset table tbody tr td:last-child {
+    flex: 1;
+  }
+  .sub_AS #member fieldset table tbody tr th {
+    width: 30%;
+    font: 12px/1 "LotteMartDream";
+    color: #555;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr th input[type=submit] {
+    width: 100%;
+    height: 40px;
+    font: bold 14px/1.2 "LotteMartDream";
+    color: #555;
+    border: 1px solid #e8dfd8;
+    cursor: pointer;
+  }
+  .sub_AS #member fieldset table tbody tr td {
+    width: 80%;
+    font: 12px/1.5 "LotteMartDream";
+    color: #555;
+    position: relative;
+    border-left: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn::before {
+    content: "\f06e";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td #toggleBtn.hide::before {
+    content: "\f070";
+    font-family: fontAwesome;
+  }
+  .sub_AS #member fieldset table tbody tr td input[type=text],
+  .sub_AS #member fieldset table tbody tr td input[type=tel],
+  .sub_AS #member fieldset table tbody tr td input[type=password],
+  .sub_AS #member fieldset table tbody tr td input[type=datetime-local],
+  .sub_AS #member fieldset table tbody tr td input[type=checkbox],
+  .sub_AS #member fieldset table tbody tr td select {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  .sub_AS #member fieldset table tbody tr td textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid #e8dfd8;
+    padding: 10px;
+    resize: none;
+  }
+  .sub_AS #member fieldset table tbody tr td p {
+    font: 11px/1 "LotteMartDream";
+    color: orangered;
+    margin-top: 5px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS {
+    height: 60px;
+  }
+  .sub_AS #member fieldset table tbody tr.date_AS th,
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS {
+    height: 100px;
+  }
+  .sub_AS #member fieldset table tbody tr.comments_AS th,
+  .sub_AS #member fieldset table tbody tr.comments_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS {
+    height: 270px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS th,
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_01 input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+  }
+  .sub_AS #member fieldset table tbody tr.agree_AS td .agree_AS_inner_02 {
+    align-self: flex-start;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS {
+    width: 100%;
+    height: 250px;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+    margin-right: auto;
+    padding-left: 2.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th,
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info1_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info1_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS {
+    width: 100%;
+    height: 580px;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4.5%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th,
+  .sub_AS #member fieldset table tbody tr.info2_AS td {
+    height: 100%;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th .point_AS,
+  .sub_AS #member fieldset table tbody tr.info2_AS td .point_AS {
+    color: orange;
+  }
+  .sub_AS #member fieldset table tbody tr.info2_AS th ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS th li,
+  .sub_AS #member fieldset table tbody tr.info2_AS td ul,
+  .sub_AS #member fieldset table tbody tr.info2_AS td li {
+    list-style-type: circle;
+  }
+}
 .CF_youtube {
   width: 100%;
   margin-top: 5%;

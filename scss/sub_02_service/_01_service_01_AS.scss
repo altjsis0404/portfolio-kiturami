@@ -1,7 +1,6 @@
 .sub_AS {
 	width: 100%;
-	margin: 5% 0% 5% 0%;
-
+	margin: 5vw 0vw;
 
 	h6 {
 		display: none;
@@ -15,6 +14,7 @@
 		fieldset {
 			border: 1px solid #e8dfd8;
 			box-shadow: 2px 2px 10px #e8dfd8;
+			padding: 1%;
 
 			.sub_AS_title {
 				font: 18px/1 'LotteMartHappy';
@@ -25,24 +25,29 @@
 			}
 
 			table {
-				width: 1000px;
+				width: 100%;
 				text-align: left;
 				border-top: 1px solid #ddd;
 				border-bottom: 1px solid #ddd;
 				margin: 10px 0px;
 
 				tbody {
-
-
 					tr {
-						align-items: center;
 						display: flex;
+						justify-content: center;
+						align-items: center;
+
+
 
 						th,
 						td {
 							height: 70px;
 							border-bottom: 1px solid #ddd;
 							padding: 10px 25px;
+
+							&:last-child {
+								flex: 1;
+							}
 						}
 
 						th {
@@ -50,17 +55,28 @@
 							font: 15px/1 'LotteMartDream';
 							color: #555;
 							display: flex;
-							justify-content: center;
+							justify-content: left;
 							align-items: center;
+
+							input[type='submit'] {
+								width: 100%;
+								height: 40px;
+								font: bold 16px/1.2 'LotteMartDream';
+								color: #555;
+								border: 1px solid #e8dfd8;
+								cursor: pointer;
+							}
 						}
 
 						td {
-							width: 90%;
-							height: 70px;
+							width: 80%;
 							font: 14px/1.5 'LotteMartDream';
 							color: #555;
 							position: relative;
 							border-left: 1px solid #fff;
+							display: flex;
+							justify-content: center;
+							align-items: center;
 
 							#toggleBtn {
 								width: 34px;
@@ -92,29 +108,22 @@
 							input[type='datetime-local'],
 							input[type='checkbox'],
 							select {
-								width: 95%;
+								width: 100%;
 								background-color: rgba(0, 0, 0, 0.03);
 								padding: 10px;
 								border: 1px solid #fff;
+
+
+
 							}
 
 							textarea {
-								width: 95%;
-								height: 90%;
+								width: 100%;
+								height: 100%;
 								background-color: rgba(0, 0, 0, 0.03);
 								border: 1px solid #e8dfd8;
 								padding: 10px;
 								resize: none;
-							}
-
-							input[type='submit'] {
-								width: 120%;
-								height: 40px;
-								font: bold 16px/1.2 'LotteMartDream';
-								color: #555;
-								margin-left: -165px;
-								border: 1px solid #e8dfd8;
-								cursor: pointer;
 							}
 
 							p {
@@ -143,7 +152,7 @@
 						}
 
 						&.agree_AS {
-							height: 180px;
+							height: 200px;
 
 							th,
 							td {
@@ -154,7 +163,7 @@
 								display: flex;
 								flex-direction: column;
 
-								.agree_AS_inner {
+								.agree_AS_inner_01 {
 									width: 100%;
 									display: flex;
 									justify-content: flex-start;
@@ -166,29 +175,34 @@
 										height: 12px;
 									}
 								}
+
+								.agree_AS_inner_02 {
+									align-self: flex-start;
+
+								}
 							}
 						}
 
 						&.info1_AS {
 							width: 100%;
-							height: 120px;
-							padding: 0px 0px 0px 50px;
+							height: 180px;
 
-							.th_none {
-								width: 0px;
-								margin-left: -60px;
-							}
+
+
+							.info1_AS_title {}
 
 							td {
-								>p {
-									font: 14px/1.5 'LotteMartHappy';
-									color: #555;
+								>span {
+									margin-right: auto;
+									padding-left: 2.5%;
 								}
+
 							}
 
 							th,
 							td {
 								height: 100%;
+
 
 								.point_AS {
 									color: orange;
@@ -198,19 +212,16 @@
 
 						&.info2_AS {
 							width: 100%;
-							height: 390px;
-							padding: 0px 0px 0px 50px;
+							height: 400px;
 
-							.th_none {
-								width: 0px;
-								margin-left: -60px;
-							}
+
+							.info2_AS_title {}
 
 							td {
-								>p {
-									font: 14px/1.5 'LotteMartHappy';
-									color: #555;
-								}
+								display: flex;
+								justify-content: left;
+								align-items: center;
+								padding-left: 4.5%;
 							}
 
 							th,
@@ -228,19 +239,6 @@
 							}
 						}
 					}
-
-					&.btn_AS {
-						height: 60px;
-
-						.th_none {
-							width: 0px;
-						}
-
-						th,
-						td {
-							height: 100%;
-						}
-					}
 				}
 			}
 		}
@@ -256,4 +254,750 @@
 
 .hasDatepicker {
 	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.sub_AS {
+		width: 100%;
+		margin: 8vw 0vw;
+
+
+		h6 {
+			display: none;
+		}
+
+		#member {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			fieldset {
+				border: 1px solid #e8dfd8;
+				box-shadow: 2px 2px 10px #e8dfd8;
+				padding: 1%;
+
+				.sub_AS_title {
+					font: 18px/1 'LotteMartHappy';
+					color: #555;
+					text-align: center;
+					padding: 0px 20px 0px 20px;
+
+				}
+
+				table {
+					width: 100%;
+					text-align: left;
+					border-top: 1px solid #ddd;
+					border-bottom: 1px solid #ddd;
+					margin: 10px 0px;
+
+					tbody {
+						tr {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+
+
+							th,
+							td {
+								height: 70px;
+								border-bottom: 1px solid #ddd;
+								padding: 10px 25px;
+
+								&:last-child {
+									flex: 1;
+								}
+							}
+
+							th {
+								width: 20%;
+								font: 15px/1 'LotteMartDream';
+								color: #555;
+								display: flex;
+								justify-content: left;
+								align-items: center;
+
+								input[type='submit'] {
+									width: 100%;
+									height: 40px;
+									font: bold 16px/1.2 'LotteMartDream';
+									color: #555;
+									border: 1px solid #e8dfd8;
+									cursor: pointer;
+								}
+							}
+
+							td {
+								width: 80%;
+								font: 14px/1.5 'LotteMartDream';
+								color: #555;
+								position: relative;
+								border-left: 1px solid #fff;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								#toggleBtn {
+									width: 34px;
+									height: 34px;
+									border-radius: 50%;
+									background-color: rgba(0, 0, 0, 0.05);
+									position: absolute;
+									top: 32px;
+									right: 25px;
+									transform: translateY(-50%);
+									display: flex;
+									justify-content: center;
+									align-items: center;
+
+									&::before {
+										content: '\f06e';
+										font-family: fontAwesome;
+									}
+
+									&.hide::before {
+										content: '\f070';
+										font-family: fontAwesome;
+									}
+								}
+
+								input[type='text'],
+								input[type='tel'],
+								input[type='password'],
+								input[type='datetime-local'],
+								input[type='checkbox'],
+								select {
+									width: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									padding: 10px;
+									border: 1px solid #fff;
+
+
+
+								}
+
+								textarea {
+									width: 100%;
+									height: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									border: 1px solid #e8dfd8;
+									padding: 10px;
+									resize: none;
+								}
+
+								p {
+									font: 11px/1 'LotteMartDream';
+									color: orangered;
+									margin-top: 5px;
+								}
+							}
+
+							&.date_AS {
+								height: 60px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.comments_AS {
+								height: 230px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.agree_AS {
+								height: 230px;
+
+								th,
+								td {
+									height: 100%;
+								}
+
+								td {
+									display: flex;
+									flex-direction: column;
+
+									.agree_AS_inner_01 {
+										width: 100%;
+										display: flex;
+										justify-content: flex-start;
+										align-items: center;
+										gap: 6px;
+
+										input[type='checkbox'] {
+											width: 12px;
+											height: 12px;
+										}
+									}
+
+									.agree_AS_inner_02 {
+										align-self: flex-start;
+
+									}
+								}
+							}
+
+							&.info1_AS {
+								width: 100%;
+								height: 210px;
+
+
+
+								.info1_AS_title {}
+
+								td {
+									>span {
+										margin-right: auto;
+										padding-left: 2.5%;
+									}
+
+								}
+
+								th,
+								td {
+									height: 100%;
+
+
+									.point_AS {
+										color: orange;
+									}
+								}
+							}
+
+							&.info2_AS {
+								width: 100%;
+								height: 470px;
+
+
+								.info2_AS_title {}
+
+								td {
+									display: flex;
+									justify-content: left;
+									align-items: center;
+									padding-left: 4.5%;
+								}
+
+								th,
+								td {
+									height: 100%;
+
+									.point_AS {
+										color: orange;
+									}
+
+									ul,
+									li {
+										list-style-type: circle;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.sub_AS {
+		width: 100%;
+
+		h6 {
+			display: none;
+		}
+
+		#member {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			fieldset {
+				border: 1px solid #e8dfd8;
+				box-shadow: 2px 2px 10px #e8dfd8;
+				padding: 1%;
+
+				.sub_AS_title {
+					font: 16px/1 'LotteMartHappy';
+					color: #555;
+					text-align: center;
+					padding: 0px 20px 0px 20px;
+
+				}
+
+				table {
+					width: 100%;
+					text-align: left;
+					border-top: 1px solid #ddd;
+					border-bottom: 1px solid #ddd;
+					margin: 10px 0px;
+
+					tbody {
+						tr {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+
+
+							th,
+							td {
+								height: 70px;
+								border-bottom: 1px solid #ddd;
+								padding: 10px 25px;
+
+								&:last-child {
+									flex: 1;
+								}
+							}
+
+							th {
+								width: 30%;
+								font: 12px/1 'LotteMartDream';
+								color: #555;
+								display: flex;
+								justify-content: left;
+								align-items: center;
+
+								input[type='submit'] {
+									width: 100%;
+									height: 40px;
+									font: bold 14px/1.2 'LotteMartDream';
+									color: #555;
+									border: 1px solid #e8dfd8;
+									cursor: pointer;
+								}
+							}
+
+							td {
+								width: 80%;
+								font: 12px/1.5 'LotteMartDream';
+								color: #555;
+								position: relative;
+								border-left: 1px solid #fff;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								#toggleBtn {
+									width: 34px;
+									height: 34px;
+									border-radius: 50%;
+									background-color: rgba(0, 0, 0, 0.05);
+									position: absolute;
+									top: 32px;
+									right: 25px;
+									transform: translateY(-50%);
+									display: flex;
+									justify-content: center;
+									align-items: center;
+
+									&::before {
+										content: '\f06e';
+										font-family: fontAwesome;
+									}
+
+									&.hide::before {
+										content: '\f070';
+										font-family: fontAwesome;
+									}
+								}
+
+								input[type='text'],
+								input[type='tel'],
+								input[type='password'],
+								input[type='datetime-local'],
+								input[type='checkbox'],
+								select {
+									width: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									padding: 10px;
+									border: 1px solid #fff;
+
+
+
+								}
+
+								textarea {
+									width: 100%;
+									height: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									border: 1px solid #e8dfd8;
+									padding: 10px;
+									resize: none;
+								}
+
+								p {
+									font: 11px/1 'LotteMartDream';
+									color: orangered;
+									margin-top: 5px;
+								}
+							}
+
+							&.date_AS {
+								height: 60px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.comments_AS {
+								height: 230px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.agree_AS {
+								height: 230px;
+
+								th,
+								td {
+									height: 100%;
+								}
+
+								td {
+									display: flex;
+									flex-direction: column;
+
+									.agree_AS_inner_01 {
+										width: 100%;
+										display: flex;
+										justify-content: flex-start;
+										align-items: center;
+										gap: 6px;
+
+										input[type='checkbox'] {
+											width: 12px;
+											height: 12px;
+										}
+									}
+
+									.agree_AS_inner_02 {
+										align-self: flex-start;
+
+									}
+								}
+							}
+
+							&.info1_AS {
+								width: 100%;
+								height: 210px;
+
+
+
+								.info1_AS_title {}
+
+								td {
+									>span {
+										margin-right: auto;
+										padding-left: 2.5%;
+									}
+
+								}
+
+								th,
+								td {
+									height: 100%;
+
+
+									.point_AS {
+										color: orange;
+									}
+								}
+							}
+
+							&.info2_AS {
+								width: 100%;
+								height: 470px;
+
+
+								.info2_AS_title {}
+
+								td {
+									display: flex;
+									justify-content: left;
+									align-items: center;
+									padding-left: 4.5%;
+								}
+
+								th,
+								td {
+									height: 100%;
+
+									.point_AS {
+										color: orange;
+									}
+
+									ul,
+									li {
+										list-style-type: circle;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.sub_AS {
+		width: 100%;
+
+		h6 {
+			display: none;
+		}
+
+		#member {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			fieldset {
+				border: 1px solid #e8dfd8;
+				box-shadow: 2px 2px 10px #e8dfd8;
+				padding: 1%;
+
+				.sub_AS_title {
+					font: 16px/1 'LotteMartHappy';
+					color: #555;
+					text-align: center;
+					padding: 0px 20px 0px 20px;
+
+				}
+
+				table {
+					width: 100%;
+					text-align: left;
+					border-top: 1px solid #ddd;
+					border-bottom: 1px solid #ddd;
+					margin: 10px 0px;
+
+					tbody {
+						tr {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+
+
+							th,
+							td {
+								height: 70px;
+								border-bottom: 1px solid #ddd;
+								padding: 10px 25px;
+
+								&:last-child {
+									flex: 1;
+								}
+							}
+
+							th {
+								width: 30%;
+								font: 12px/1 'LotteMartDream';
+								color: #555;
+								display: flex;
+								justify-content: left;
+								align-items: center;
+
+								input[type='submit'] {
+									width: 100%;
+									height: 40px;
+									font: bold 14px/1.2 'LotteMartDream';
+									color: #555;
+									border: 1px solid #e8dfd8;
+									cursor: pointer;
+								}
+							}
+
+							td {
+								width: 80%;
+								font: 12px/1.5 'LotteMartDream';
+								color: #555;
+								position: relative;
+								border-left: 1px solid #fff;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								#toggleBtn {
+									width: 34px;
+									height: 34px;
+									border-radius: 50%;
+									background-color: rgba(0, 0, 0, 0.05);
+									position: absolute;
+									top: 32px;
+									right: 25px;
+									transform: translateY(-50%);
+									display: flex;
+									justify-content: center;
+									align-items: center;
+
+									&::before {
+										content: '\f06e';
+										font-family: fontAwesome;
+									}
+
+									&.hide::before {
+										content: '\f070';
+										font-family: fontAwesome;
+									}
+								}
+
+								input[type='text'],
+								input[type='tel'],
+								input[type='password'],
+								input[type='datetime-local'],
+								input[type='checkbox'],
+								select {
+									width: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									padding: 10px;
+									border: 1px solid #fff;
+
+
+
+								}
+
+								textarea {
+									width: 100%;
+									height: 100%;
+									background-color: rgba(0, 0, 0, 0.03);
+									border: 1px solid #e8dfd8;
+									padding: 10px;
+									resize: none;
+								}
+
+								p {
+									font: 11px/1 'LotteMartDream';
+									color: orangered;
+									margin-top: 5px;
+								}
+							}
+
+							&.date_AS {
+								height: 60px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.comments_AS {
+								height: 100px;
+
+								th,
+								td {
+									height: 100%;
+								}
+							}
+
+							&.agree_AS {
+								height: 270px;
+
+								th,
+								td {
+									height: 100%;
+								}
+
+								td {
+									display: flex;
+									flex-direction: column;
+
+									.agree_AS_inner_01 {
+										width: 100%;
+										display: flex;
+										justify-content: flex-start;
+										align-items: center;
+										gap: 6px;
+
+										input[type='checkbox'] {
+											width: 12px;
+											height: 12px;
+										}
+									}
+
+									.agree_AS_inner_02 {
+										align-self: flex-start;
+
+									}
+								}
+							}
+
+							&.info1_AS {
+								width: 100%;
+								height: 250px;
+
+
+
+								.info1_AS_title {}
+
+								td {
+									>span {
+										margin-right: auto;
+										padding-left: 2.5%;
+									}
+
+								}
+
+								th,
+								td {
+									height: 100%;
+
+
+									.point_AS {
+										color: orange;
+									}
+								}
+							}
+
+							&.info2_AS {
+								width: 100%;
+								height: 580px;
+
+
+								.info2_AS_title {}
+
+								td {
+									display: flex;
+									justify-content: left;
+									align-items: center;
+									padding-left: 4.5%;
+								}
+
+								th,
+								td {
+									height: 100%;
+
+									.point_AS {
+										color: orange;
+									}
+
+									ul,
+									li {
+										list-style-type: circle;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
