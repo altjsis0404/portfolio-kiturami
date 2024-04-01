@@ -4081,9 +4081,6 @@ a {
   color: #555;
   position: relative;
   border-left: 1px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .sub_AS #member fieldset table tbody tr td #toggleBtn {
   width: 34px;
@@ -4137,6 +4134,11 @@ a {
 .sub_AS #member fieldset table tbody tr.date_AS td {
   height: 100%;
 }
+.sub_AS #member fieldset table tbody tr.date_AS td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sub_AS #member fieldset table tbody tr.comments_AS {
   height: 230px;
 }
@@ -4173,9 +4175,9 @@ a {
   width: 100%;
   height: 180px;
 }
-.sub_AS #member fieldset table tbody tr.info1_AS td > span {
+.sub_AS #member fieldset table tbody tr.info1_AS td {
   margin-right: auto;
-  padding-left: 2.5%;
+  padding-left: 4.5%;
 }
 .sub_AS #member fieldset table tbody tr.info1_AS th,
 .sub_AS #member fieldset table tbody tr.info1_AS td {
@@ -4286,9 +4288,6 @@ a {
     color: #555;
     position: relative;
     border-left: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .sub_AS #member fieldset table tbody tr td #toggleBtn {
     width: 34px;
@@ -4342,6 +4341,11 @@ a {
   .sub_AS #member fieldset table tbody tr.date_AS td {
     height: 100%;
   }
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .sub_AS #member fieldset table tbody tr.comments_AS {
     height: 230px;
   }
@@ -4378,9 +4382,9 @@ a {
     width: 100%;
     height: 210px;
   }
-  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
     margin-right: auto;
-    padding-left: 2.5%;
+    padding-left: 4.5%;
   }
   .sub_AS #member fieldset table tbody tr.info1_AS th,
   .sub_AS #member fieldset table tbody tr.info1_AS td {
@@ -4482,9 +4486,6 @@ a {
     color: #555;
     position: relative;
     border-left: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .sub_AS #member fieldset table tbody tr td #toggleBtn {
     width: 34px;
@@ -4538,6 +4539,11 @@ a {
   .sub_AS #member fieldset table tbody tr.date_AS td {
     height: 100%;
   }
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .sub_AS #member fieldset table tbody tr.comments_AS {
     height: 230px;
   }
@@ -4574,9 +4580,9 @@ a {
     width: 100%;
     height: 210px;
   }
-  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
     margin-right: auto;
-    padding-left: 2.5%;
+    padding-left: 4.5%;
   }
   .sub_AS #member fieldset table tbody tr.info1_AS th,
   .sub_AS #member fieldset table tbody tr.info1_AS td {
@@ -4650,7 +4656,7 @@ a {
   .sub_AS #member fieldset table tbody tr td {
     height: 70px;
     border-bottom: 1px solid #ddd;
-    padding: 10px 25px;
+    padding: 10px 20px;
   }
   .sub_AS #member fieldset table tbody tr th:last-child,
   .sub_AS #member fieldset table tbody tr td:last-child {
@@ -4678,9 +4684,6 @@ a {
     color: #555;
     position: relative;
     border-left: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .sub_AS #member fieldset table tbody tr td #toggleBtn {
     width: 34px;
@@ -4734,6 +4737,11 @@ a {
   .sub_AS #member fieldset table tbody tr.date_AS td {
     height: 100%;
   }
+  .sub_AS #member fieldset table tbody tr.date_AS td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .sub_AS #member fieldset table tbody tr.comments_AS {
     height: 100px;
   }
@@ -4770,9 +4778,9 @@ a {
     width: 100%;
     height: 250px;
   }
-  .sub_AS #member fieldset table tbody tr.info1_AS td > span {
+  .sub_AS #member fieldset table tbody tr.info1_AS td {
     margin-right: auto;
-    padding-left: 2.5%;
+    padding-left: 4.5%;
   }
   .sub_AS #member fieldset table tbody tr.info1_AS th,
   .sub_AS #member fieldset table tbody tr.info1_AS td {
