@@ -110,7 +110,7 @@ function isTxt(el, len) {
 		if (errMsgs.length > 0) input.closest('td').querySelector('p').remove();
 
 		let errMessage = document.createElement('p');
-		errMessage.append(`${len}글자 이상 입력하셔야 합니다.`);
+		errMessage.append(`${len}글자 이상 입력해 주세요.`);
 		input.closest('td').append(errMessage);
 		return false;
 	}
@@ -195,18 +195,18 @@ function isPwd(el1, el2, len) {
 		removeErr();
 		let errMsg = '비밀번호는 ';
 		if (pwd1_value.length < len) {
-			errMsg += `${len}글자 이상,`;
+			errMsg += `${len}글자 이상, `;
 		}
 		if (!num.test(pwd1_value)) {
-			errMsg += `숫자 포함,`;
+			errMsg += `숫자 포함, `;
 		}
 		if (!eng.test(pwd1_value)) {
-			errMsg += `영문 포함,`;
+			errMsg += `영문 포함, `;
 		}
 		if (!spc.test(pwd1_value)) {
-			errMsg += `특수문자 포함,`;
+			errMsg += `특수문자 포함, `;
 		}
-		errMsg += `동일하게 입력하세요`;
+		errMsg += `하여 입력해주세요.`;
 		addErr(errMsg);
 		return false;
 	}
